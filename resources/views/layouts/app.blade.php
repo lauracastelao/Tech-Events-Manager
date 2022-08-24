@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
     <!-- Tailwind CSS Link -->
     <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.1/tailwind.min.css">
@@ -33,7 +32,7 @@
             <!-- component -->
 <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
 
-<article x-data="slider" class="relative w-full flex flex-shrink-0 overflow-hidden shadow-2xl">
+<article x-data="slider" class="relative w-100 flex flex-shrink-0 overflow-hidden shadow-2xl">
     <div class="rounded-full bg-gray-600 text-white absolute top-5 right-5 text-sm px-2 text-center z-10">
         <span x-text="currentIndex"></span>/
         <span x-text="images.length"></span>
@@ -41,10 +40,10 @@
 
     <template x-for="(image, index) in images">
         <figure class="h-96" x-show="currentIndex == index + 1" x-transition:enter="transition transform duration-300"
-        x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
-        x-transition:leave="transition transform duration-300" x-transition:leave-start="opacity-100"
+        x-transition:enter-start="" x-transition:enter-end=""
+        x-transition:leave="transition transform duration-300" x-transition:leave-start=""
         x-transition:leave-end="opacity-0">
-        <img :src="image" alt="Image" class="absolute inset-0 z-10 h-full w-full object-cover opacity-70" />
+        <img :src="image" alt="Image" class="absolute inset-0 z-10 h-100 w-100 object opacity-100" />
         <figcaption class="absolute inset-x-0 bottom-1 z-20 w-96 mx-auto p-4 font-light text-sm text-center tracking-widest leading-snug bg-gray-300 bg-opacity-25">
             Any kind of content here!
             Primum in nostrane potestate est, quid meminerimus? Nulla erit controversia. Vestri haec verecundius, illi fortasse constantius. 
@@ -68,14 +67,17 @@
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path>
         </svg>
     </button>
+    
 </article>
+<x-card>
+</x-card>
 
 <script>
     document.addEventListener('alpine:init', () => {
         Alpine.data('slider', () => ({
             currentIndex: 1,
             images: [
-                'https://s1.eestatic.com/2022/05/20/malaga/la-axarquia/673943685_224477740_1706x960.jpg',
+                'https://raw.githubusercontent.com/lauracastelao/image/main/123.jpg',
                 'https://source.unsplash.com/1600x900/?cat',
                 'https://source.unsplash.com/1600x900/?dog',
                 'https://source.unsplash.com/1600x900/?lego',
