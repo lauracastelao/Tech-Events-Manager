@@ -11,12 +11,13 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.1/tailwind.min.css">
   </head>
   <body class="bg-gray-100 text-gray-800">
-    <title>@yield('title')papapapapa</title>
+    <title>@yield('title')homeBlade</title>
 
     <nav class="flex py-5 bg-indigo-500 text-white">
       <div class="w-1/2 px-12 mr-auto">
-        {{-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcPO5asjv1wfMXu-XhAyRstqTcf0c1TLcAHQ&usqp=CAU" alt=""> --}}
-        <p class="text-2xl font-bold">My Application</p>
+     
+        <p class="text-2xl font-bold">FRIKI CALENDAR</p>
+       
         @if (Route::has('login'))
             <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                 @auth
