@@ -11,7 +11,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.1/tailwind.min.css">
   </head>
   <body class="bg-gray-100 text-gray-800">
-    <title>@yield('title')papapapapa</title>
+    <title>@yield('title')Friki Calendar</title>
 
     <nav class="flex py-5 bg-indigo-500 text-white">
       <div class="w-1/2 px-12 mr-auto">
@@ -45,10 +45,9 @@
         x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
         x-transition:leave="transition transform duration-300" x-transition:leave-start="opacity-100"
         x-transition:leave-end="opacity-0">
-        <img :src="image" alt="Image" class="absolute inset-0 z-10 h-full w-full object-cover opacity-70" />
-        <figcaption class="absolute inset-x-0 bottom-1 z-20 w-96 mx-auto p-4 font-light text-sm text-center tracking-widest leading-snug bg-gray-300 bg-opacity-25">
-            Any kind of content here!
-            Primum in nostrane potestate est, quid meminerimus? Nulla erit controversia. Vestri haec verecundius, illi fortasse constantius. 
+        <img :src="image" alt="Image" class="absolute inset-0 z-10 h-full w-full object-cover " />
+        <figcaption class="absolute inset-x-0 bottom-1 z-20 w-96 mx-auto p-4 font-gray text-sm text-center tracking-widest leading-snug bg-gray-300 bg-opacity-25">
+           Una página creada para una comunidad grande, aqui puedes visualizar y guardar tus eventos favoritos; cometcon, conferencias, lanzamientos y más ¿Te lo vas a perder? 
         </figcaption>
         </figure>
     </template>
@@ -84,11 +83,11 @@
         Alpine.data('slider', () => ({
             currentIndex: 1,
             images: [
-                'https://s1.eestatic.com/2022/05/20/malaga/la-axarquia/673943685_224477740_1706x960.jpg',
-                'https://source.unsplash.com/1600x900/?cat',
-                'https://source.unsplash.com/1600x900/?dog',
-                'https://source.unsplash.com/1600x900/?lego',
-                'https://source.unsplash.com/1600x900/?textures&patterns'
+                'https://github.com/lauracastelao/image/blob/main/comic.jpg?raw=true',
+                'https://raw.githubusercontent.com/lauracastelao/image/main/anatmo.jpg',
+                'https://github.com/lauracastelao/image/blob/main/comic.jpg?raw=true',
+                'https://github.com/lauracastelao/image/blob/main/santa.jpg?raw=true',
+                'https://github.com/lauracastelao/image/blob/main/2015.jpg?raw=true'
             ],
             back() {
                 if (this.currentIndex > 1) {
