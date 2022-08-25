@@ -1,9 +1,10 @@
 
+<div class="flex justify-start">
 
-  <div class="flex justify-center">
+  <div class="flex justify-evenly mt-5 flex ">
     <div class="rounded-lg shadow-lg bg-white max-w-sm">
       <a href="#!">
-        <img class="rounded-t-lg" src="https://cflvdg.avoz.es/sc/txWIE5o1D-ggW_F-kCS4eVJuWRY=/x/2020/02/03/00121580736383427180173/Foto/cometc.jpggit" alt=""/>
+        <img class="rounded-t w-40" src="https://th.bing.com/th/id/OIP.PMmw7ScrZTqd1tX_tW3jqwAAAA?pid=ImgDet&rs=1" alt=""/>
       </a>
       <div class="p-6">
         <h5 class="text-gray-900 text-xl font-medium mb-2">Cometcon 22 </h5>
@@ -14,3 +15,4 @@
       </div>
     </div>
   </div>
+</div>

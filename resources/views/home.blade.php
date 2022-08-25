@@ -70,6 +70,14 @@
         </svg>
     </button>
 </article>
+<x-card>
+</x-card>
+<x-card>
+</x-card>
+<x-card>
+</x-card>
+<x-card>
+</x-card>
 
 <script>
     document.addEventListener('alpine:init', () => {
