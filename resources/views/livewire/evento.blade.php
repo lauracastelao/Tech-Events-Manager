@@ -1,3 +1,6 @@
+@extends('layouts.layout')
+
+
 <div>
     <h1> Probando </h1>
 </div>
