@@ -14,18 +14,20 @@
     <title>@yield('title')Friki Calendar</title>
 
     <nav class="flex py-5 bg-purple-500 text-white">
-      <div class="w-1/2 px-12 mr-auto">
-        {{-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcPO5asjv1wfMXu-XhAyRstqTcf0c1TLcAHQ&usqp=CAU" alt=""> --}}
-        <p class="text-2xl font-bold">Friki Calendar  🪄 </p>
+      <div class="w-1/2 px-12 mr-auto flex">
+        <p class="text-2xl font-bold ">Friki Calendar</p>
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cat" class="ml-4 mt-2 w-4 h-4" mt-2role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <path fill="currentColor" d="M290.59 192c-20.18 0-106.82 1.98-162.59 85.95V192c0-52.94-43.06-96-96-96-17.67 0-32 14.33-32 32s14.33 32 32 32c17.64 0 32 14.36 32 32v256c0 35.3 28.7 64 64 64h176c8.84 0 16-7.16 16-16v-16c0-17.67-14.33-32-32-32h-32l128-96v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V289.86c-10.29 2.67-20.89 4.54-32 4.54-61.81 0-113.52-44.05-125.41-102.4zM448 96h-64l-64-64v134.4c0 53.02 42.98 96 96 96s96-42.98 96-96V32l-64 64zm-72 80c-8.84 0-16-7.16-16-16s7.16-16 16-16 16 7.16 16 16-7.16 16-16 16zm80 0c-8.84 0-16-7.16-16-16s7.16-16 16-16 16 7.16 16 16-7.16 16-16 16z"></path>
+    
         @if (Route::has('login'))
-            <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                @auth
-                    <a href="{{ url('/dashboard') }}" class="text-m text-gray-700 dark:text-gray-500">Home</a>
+        <div class="hidden fixed top-2 right-0 px-6 py-4 sm:block">
+            @auth
+                <a href="{{ url('/dashboard') }}" class="text-m text-gray-700 dark:text-gray-500">Home</a>
                 @else
-                    <a href="{{ route('login') }}" class="ml-6 text-sl text-white-900 ">Acceder</a>
+                    <a href="{{ route('login') }}" class="ml-6 text-sl text-white-900 font-bold ">Acceder</a>
 
                     @if (Route::has('register'))
-                        <a href="{{ route('register') }}" class="ml-6 text-sl text-white-900 ">Registro</a>
+                        <a href="{{ route('register') }}" class="ml-6 text-sl text-white-900 font-bold">Registro</a>
                     @endif
                 @endauth
             </div>
@@ -110,7 +112,7 @@
         <a href="#">
             <div class="flex relative justify-center">
                 <img alt="gallery" class="absolute inset-0 w-full h-full object-fit object-center rounded" src=" 
-                 https://th.bing.com/th/id/OIP.PMmw7ScrZTqd1tX_tW3jqwAAAA?pid=ImgDet&rs=1" alt=""/>
+                https://img.freepik.com/psd-gratis/plantilla-poster-dia-orgullo-friki_23-2148954984.jpg?w=2000" alt=""/>
                 
                 <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-300 bg-indigo-400 opacity-0 hover:opacity-100 justify-center">
                     <h1 class="tracking-widest text-mg title-font font-bold text-black mb-1">Cosplay</h1>
@@ -129,7 +131,7 @@
         <a href="#">
             <div class="flex relative justify-center">
                 <img alt="gallery" class="absolute inset-0 w-full h-full object-fit object-center rounded" src=" 
-                 https://th.bing.com/th/id/OIP.PMmw7ScrZTqd1tX_tW3jqwAAAA?pid=ImgDet&rs=1" alt=""/>
+                https://cloudfront-eu-central-1.images.arcpublishing.com/prisaradio/FFTXTJ2GOZCQHDTG4UD3E6OXVY.jpg" alt=""/>
                 
                 <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-300 bg-indigo-400 opacity-0 hover:opacity-100 justify-center">
                     <h1 class="tracking-widest text-mg title-font font-bold text-black mb-1">Cosplay</h1>
@@ -148,7 +150,7 @@
         <a href="#">
             <div class="flex relative justify-center">
                 <img alt="gallery" class="absolute inset-0 w-full h-full object-fit object-center rounded" src=" 
-                 https://th.bing.com/th/id/OIP.PMmw7ScrZTqd1tX_tW3jqwAAAA?pid=ImgDet&rs=1" alt=""/>
+                https://www.guiadecadiz.com/sites/default/files/2022/AGENDA/friki/Cartel%20II%20Salon%20de%20Manga.jpg" alt=""/>
                 
                 <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-300 bg-indigo-400 opacity-0 hover:opacity-100 justify-center">
                     <h1 class="tracking-widest text-mg title-font font-bold text-black mb-1">Cosplay</h1>
