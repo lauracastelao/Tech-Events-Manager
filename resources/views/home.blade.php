@@ -13,7 +13,7 @@
   <body class="bg-gray-100 text-gray-800">
     <title>@yield('title')Friki Calendar</title>
 
-    <nav class="flex py-5 bg-indigo-500 text-white">
+    <nav class="flex py-5 bg-purple-500 text-white">
       <div class="w-1/2 px-12 mr-auto">
         {{-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcPO5asjv1wfMXu-XhAyRstqTcf0c1TLcAHQ&usqp=CAU" alt=""> --}}
         <p class="text-2xl font-bold">Friki Calendar  🪄 </p>
@@ -84,10 +84,10 @@
             currentIndex: 1,
             images: [
                 'https://github.com/lauracastelao/image/blob/main/comic.jpg?raw=true',
-                'https://raw.githubusercontent.com/lauracastelao/image/main/anatmo.jpg',
+                'https://raw.githubusercontent.com/lauracastelao/image/main/Mi%20proyecto.jpg',
                 'https://github.com/lauracastelao/image/blob/main/comic.jpg?raw=true',
                 'https://github.com/lauracastelao/image/blob/main/santa.jpg?raw=true',
-                'https://github.com/lauracastelao/image/blob/main/2015.jpg?raw=true'
+                'https://raw.githubusercontent.com/lauracastelao/image/main/Mi%20proyecto.jpg'
             ],
             back() {
                 if (this.currentIndex > 1) {
