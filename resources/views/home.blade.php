@@ -16,16 +16,16 @@
     <nav class="flex py-5 bg-indigo-500 text-white">
       <div class="w-1/2 px-12 mr-auto">
         {{-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcPO5asjv1wfMXu-XhAyRstqTcf0c1TLcAHQ&usqp=CAU" alt=""> --}}
-        <p class="text-2xl font-bold">My Application</p>
+        <p class="text-2xl font-bold">Friki Calendar  🪄 </p>
         @if (Route::has('login'))
             <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                 @auth
-                    <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
+                    <a href="{{ url('/dashboard') }}" class="text-m text-gray-700 dark:text-gray-500 underline">Home</a>
                 @else
-                    <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
+                    <a href="{{ route('login') }}" class="text-m text-white-700 dark:text-gray-500 underline">Acceder</a>
 
                     @if (Route::has('register'))
-                        <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
+                        <a href="{{ route('register') }}" class="ml-4 text-sm text-white-700 dark:text-gray-500 underline">Registro</a>
                     @endif
                 @endauth
             </div>
