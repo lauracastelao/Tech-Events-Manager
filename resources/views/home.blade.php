@@ -34,9 +34,9 @@
                 @endif
             </nav>
             <!-- component -->
-<script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
 
-<article x-data="slider" class="relative w-full flex flex-shrink-0 overflow-hidden shadow-2xl">
+    <article x-data="slider" class="relative w-full flex flex-shrink-0 overflow-hidden shadow-2xl">
     <div class="rounded-full bg-gray-600 text-white absolute top-5 right-5 text-sm px-2 text-center z-10">
         <span x-text="currentIndex"></span>/
         <span x-text="images.length"></span>
@@ -70,7 +70,7 @@
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path>
         </svg>
     </button>
-</article>
+    </article>
 
 {{-- <x-card> --}}
 {{-- </x-card> --}}
@@ -83,13 +83,9 @@
 
 <!-- component -->
 
-
-
-<div class="flex flex-wrap justify-center">
+    <div class="flex flex-wrap justify-center">
     <a href="#">
         <div class="lg:w-1/6 m-2">
-        
-        
         
           <div class="flex relative justify-center">
               <img alt="gallery" class="absolute inset-0 w-full h-full object-fit object-center rounded" src=" 
@@ -220,8 +216,22 @@
 
 
 
-  </section>
-
+    </section>
+    <tbody>
+        @foreach ($products as $product)
+            <tr>
+                
+                <td>{{$product->name}}</td>
+                <td>{{ $product->description }}<
+                <td>
+                    <button type="button" class=
+                </td>
+                <td>
+                    <button type="button" class=
+                </td>
+            </tr>
+        @endforeach
+    </tbody>
 
 
 <script>
