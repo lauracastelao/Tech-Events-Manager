@@ -71,7 +71,6 @@
         </svg>
     </button>
 </article>
-
 {{-- <x-card> --}}
 {{-- </x-card> --}}
 {{-- <x-card> --}}
