@@ -15,9 +15,11 @@ use App\Http\Controllers\SessionsController;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
+Route::get('/ghu', function () {
+    return view('home',);
 }); 
+
+Route::get('/', [ProductController::class,'index']);
 
 Route::get('/welcome', function () {
     return view('welcome');

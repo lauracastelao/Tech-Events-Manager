@@ -190,6 +190,7 @@ hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
         </a>
       </div>
       @livewire('product-component')
+      <x-card/>
   </section>
 
 
