@@ -184,7 +184,8 @@
             </div>
         </a>
       </div>
-  
+      @livewire('product-component')
+      <x-card/>
 
 
 
