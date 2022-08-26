@@ -71,24 +71,11 @@
         </svg>
     </button>
 </article>
-{{-- <x-card> --}}
-{{-- </x-card> --}}
-{{-- <x-card> --}}
-{{-- </x-card> --}}
-{{-- <x-card> --}}
-{{-- </x-card> --}}
-{{-- <x-card> --}}
-{{-- </x-card> --}}
-
-<!-- component -->
-
 
 
 <div class="flex flex-wrap justify-center">
     <a href="#">
         <div class="lg:w-1/6 m-2">
-        
-        
         
           <div class="flex relative justify-center">
               <img alt="gallery" class="absolute inset-0 w-full h-full object-fit object-center rounded" src=" 
