@@ -34,9 +34,9 @@
                 @endif
             </nav>
             <!-- component -->
-    <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+<script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
 
-    <article x-data="slider" class="relative w-full flex flex-shrink-0 overflow-hidden shadow-2xl">
+<article x-data="slider" class="relative w-full flex flex-shrink-0 overflow-hidden shadow-2xl">
     <div class="rounded-full bg-gray-600 text-white absolute top-5 right-5 text-sm px-2 text-center z-10">
         <span x-text="currentIndex"></span>/
         <span x-text="images.length"></span>
@@ -70,7 +70,7 @@
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path>
         </svg>
     </button>
-    </article>
+</article>
 
 {{-- <x-card> --}}
 {{-- </x-card> --}}
@@ -83,9 +83,13 @@
 
 <!-- component -->
 
-    <div class="flex flex-wrap justify-center">
+
+
+<div class="flex flex-wrap justify-center">
     <a href="#">
         <div class="lg:w-1/6 m-2">
+        
+        
         
           <div class="flex relative justify-center">
               <img alt="gallery" class="absolute inset-0 w-full h-full object-fit object-center rounded" src=" 
@@ -181,6 +185,17 @@
         </a>
       </div>
   
+      <div class="py-12">
+        <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="overflow-hidden bg-white shadow-sm sm:rounded-lg">
+                <div class="p-6 bg-white border-b border-gray-200">
+                    @livewire('product-component')
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
 
 
 
@@ -197,6 +212,7 @@
 
 
 
+     
 
 
 
@@ -205,60 +221,5 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-    </section>
-    <tbody>
-        @foreach ($products as $product)
-            <tr>
-                
-                <td>{{$product->name}}</td>
-                <td>{{ $product->description }}<
-                <td>
-                    <button type="button" class=
-                </td>
-                <td>
-                    <button type="button" class=
-                </td>
-            </tr>
-        @endforeach
-    </tbody>
-
-
-<script>
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('slider', () => ({
-            currentIndex: 1,
-            images: [
-                'https://github.com/lauracastelao/image/blob/main/comic.jpg?raw=true',
-                'https://raw.githubusercontent.com/lauracastelao/image/main/Mi%20proyecto.jpg',
-                'https://github.com/lauracastelao/image/blob/main/comic.jpg?raw=true',
-                'https://github.com/lauracastelao/image/blob/main/santa.jpg?raw=true',
-                'https://raw.githubusercontent.com/lauracastelao/image/main/Mi%20proyecto.jpg'
-            ],
-            back() {
-                if (this.currentIndex > 1) {
-                    this.currentIndex = this.currentIndex - 1;
-                }
-            },
-            next() {
-                if (this.currentIndex < this.images.length) {
-                    this.currentIndex = this.currentIndex + 1;
-                } else if (this.currentIndex <= this.images.length){
-                    this.currentIndex = this.images.length - this.currentIndex + 1
-                }
-            },
-        }))
-    })
-</script>
         
   </body>
