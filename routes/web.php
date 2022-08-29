@@ -16,7 +16,7 @@ use App\Http\Controllers\SessionsController;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view ('home'); 
 }); 
 
 Route::get('/welcome', function () {
@@ -30,3 +30,5 @@ Route::get('/dashboard', function () {
 
 require __DIR__.'/auth.php';
 Route::resource('image', 'ImageController');
+
+
