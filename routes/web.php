@@ -15,15 +15,15 @@ use App\Http\Controllers\SessionsController;
 |
 */
 
-Route::get('/ghu', function () {
-    return view('home',);
+Route::get('/', function () {
+    return view('welcome',);
 }); 
 
-Route::get('/', [ProductController::class,'index']);
+Route::get('/home', [ProductController::class,'index']);
 
-Route::get('/welcome', function () {
-    return view('welcome');
-});
+// Route::get('/welcome', function () {
+    // return view('welcome');
+// });
 Route::get('/products', [ProductController::class,'index']);
 
 Route::get('/dashboard', function () {

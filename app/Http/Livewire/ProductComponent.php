@@ -17,7 +17,7 @@ class ProductComponent extends Component
     }
     public function render()
     {
-        $products= Product::orderBy('id','desc')->paginate(1);
+        $products= Product::orderBy('id','desc')->paginate(4);
         return view('livewire.product-component', compact('products'));
     }
         
