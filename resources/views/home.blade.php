@@ -33,6 +33,7 @@
             </div>
                 @endif
             </nav>
+        
             <!-- component -->
 <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
 
@@ -121,6 +122,7 @@
                 hover:bg-purple-500
                   hover:shadow-lg p-2 focus:bg-white focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 "> ➕ 
                 Apuntarse 
+                @livewire ('mail')
                   </button>
                 </div>
             </div>

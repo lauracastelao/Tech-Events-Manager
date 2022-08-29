@@ -19,7 +19,7 @@ class RegisterController extends Controller
             'password' => 'required|confirmed',
         ]);
         $user = User::create(request(['name', 'email', 'password']));
-
+      
         auth()->login($user);
         return redirect()->to('/');
     }
