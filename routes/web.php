@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MailController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
@@ -31,4 +32,4 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 Route::resource('image', 'ImageController');
 
-
+Route::get ('send-email', [MailController::class,]);
