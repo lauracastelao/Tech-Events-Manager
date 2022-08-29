@@ -71,7 +71,6 @@
         </svg>
     </button>
 </article>
-
 {{-- <x-card> --}}
 {{-- </x-card> --}}
 {{-- <x-card> --}}
@@ -187,70 +186,41 @@
         </a>
       </div>
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <div class="py-12">
+        <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="overflow-hidden bg-white shadow-sm sm:rounded-lg">
+                <div class="p-6 bg-white border-b border-gray-200">
+                    @livewire('product-component')
+                   
+                </div>
+            </div>
+        </div>
+    </div>
   </section>
 
 
 
-<script>
-    document.addEventListener('alpine:init', () => {
-        Alpine.data('slider', () => ({
-            currentIndex: 1,
-            images: [
-                'https://github.com/lauracastelao/image/blob/main/comic.jpg?raw=true',
-                'https://raw.githubusercontent.com/lauracastelao/image/main/Mi%20proyecto.jpg',
-                'https://github.com/lauracastelao/image/blob/main/comic.jpg?raw=true',
-                'https://github.com/lauracastelao/image/blob/main/santa.jpg?raw=true',
-                'https://raw.githubusercontent.com/lauracastelao/image/main/Mi%20proyecto.jpg'
-            ],
-            back() {
-                if (this.currentIndex > 1) {
-                    this.currentIndex = this.currentIndex - 1;
-                }
-            },
-            next() {
-                if (this.currentIndex < this.images.length) {
-                    this.currentIndex = this.currentIndex + 1;
-                } else if (this.currentIndex <= this.images.length){
-                    this.currentIndex = this.images.length - this.currentIndex + 1
-                }
-            },
-        }))
-    })
-</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+
         
   </body>
