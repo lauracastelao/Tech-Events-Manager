@@ -10,6 +10,7 @@ use Illuminate\Queue\SerializesModels;
 class TestMail extends Mailable
 {
     use Queueable, SerializesModels;
+ 
     public $details;
     /**
      * Create a new message instance.
@@ -18,7 +19,7 @@ class TestMail extends Mailable
      */
     public function __construct($details)
     {
-   $this->details= $details;
+       $this->details = $details;
     }
 
     /**
@@ -28,6 +29,6 @@ class TestMail extends Mailable
      */
     public function build()
     {
-        return $this->subject('Test Mail From Tech Events') -> view('emails.TestMail');
+        return $this->subject ('Test Mail From Tech Events')->view ('emails.TestMail');
     }
 }

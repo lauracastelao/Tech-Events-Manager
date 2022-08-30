@@ -7,17 +7,16 @@ use Illuminate\Contracts\Mail\Mailer;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
-class MailController extends Controller
+class MailController extends Controller{  
+
+public function sendEmail ()
 {
+    $details= [
+    'title' => 'Friki Calendar',
+    'body' => 'Gracias por suscribirte',
+    ];
 
-    public function sendEmail()
-    {
-        $details = [
-            'title' => 'Friki Calendar',
-            'body' => 'Gracias por suscribirte',
-        ];
-
-        Mail::to("alt.s3-dogawsw2@yopmail.com")->send(new TestMail($details));
-        return "Email enviado";
-    }
+    Mail::to("alt.s3-dogawsw2@yopmail.com")->send(new TestMail($details));
+    return "Email enviado";
+}
 }
