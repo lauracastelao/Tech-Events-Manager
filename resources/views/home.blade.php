@@ -83,7 +83,7 @@ hover:translate-x-0.5"
     </article>
 
 
-    <livewire:product-component />
+    <livewire:product-component/>
 
 
     </section>
@@ -92,7 +92,6 @@ hover:translate-x-0.5"
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eos obcaecati, excepturi, ratione vel quas quasi doloribus ut, sapiente soluta similique voluptatem architecto fugiat nisi quidem? Alias, velit! Ad, repudiandae?
     </div>
 
-<<<<<<< HEAD
     <template x-for="(image, index) in images">
         <figure class="h-96" x-show="currentIndex == index + 1" x-transition:enter="transition transform duration-300"
         x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
@@ -123,121 +122,13 @@ hover:translate-x-0.5"
     </button>
 </article>
 
-{{-- <x-card> --}}
-{{-- </x-card> --}}
-{{-- <x-card> --}}
-{{-- </x-card> --}}
-{{-- <x-card> --}}
-{{-- </x-card> --}}
-{{-- <x-card> --}}
-{{-- </x-card> --}}
-
-<!-- component -->
 
 
 
-<div class="flex flex-wrap justify-center">
-    <a href="#">
-        <div class="lg:w-1/6 m-2">
-        
-        
-        
-          <div class="flex relative justify-center">
-              <img alt="gallery" class="absolute inset-0 w-full h-full object-fit object-center rounded" src=" 
-               https://th.bing.com/th/id/OIP.PMmw7ScrZTqd1tX_tW3jqwAAAA?pid=ImgDet&rs=1" alt=""/>
-              
-              <div class="px-8 py-10 relative z-10 w-full border-4  bg-indigo-400 opacity-0 hover:opacity-100 justify-center rounded">
-                  <h1 class="tracking-widest text-mg title-font font-bold text-black mb-1">Cosplay</h1>
-                  <h2 class="title-font text-mg font-bold text-black hover:text-indigo-100 mb-3">06/02/2023</h2>
-                  <p class="leading-relaxed text-black">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-                  <button type="button" class="font-small uppercase rounded shadow-md 
-                  hover:bg-purple-500
-                    hover:shadow-lg focus:bg-white focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 "> ➕ 
-                  Apuntarse 
-                    </button>
-              </div>
-          </div>
-      </a>
-    </div>
-    <div class="lg:w-1/6 m-2 justify-center">
-        <a href="#">
-            <div class="flex relative justify-center">
-                <img alt="gallery" class="absolute inset-0 w-full h-full object-fit object-center rounded shadow-lg" src=" 
-                https://img.freepik.com/psd-gratis/plantilla-poster-dia-orgullo-friki_23-2148954984.jpg?w=2000" alt=""/>
-                
-                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-300 bg-indigo-400 opacity-0 hover:opacity-100 justify-center">
-                    <h1 class="tracking-widest text-mg title-font font-bold text-black mb-1">Cosplay</h1>
-                    <h2 class="title-font text-mg font-bold text-black hover:text-indigo-100 mb-3">06/02/2023</h2>
-                    <p class="leading-relaxed text-black">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-                <button type="button" class="font-small uppercase rounded shadow-md 
-                hover:bg-purple-500
-                  hover:shadow-lg p-2 focus:bg-white focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 "> ➕ 
-                Apuntarse 
-                  </button>
-                </div>
-            </div>
-        </a>
-      </div>
-      <div class="lg:w-1/6 m-2 justify-center">
-        <a href="#">
-            <div class="flex relative justify-center">
-                <img alt="gallery" class="absolute inset-0 w-full h-full object-fit object-center rounded shadow-lg " src=" 
-                https://cloudfront-eu-central-1.images.arcpublishing.com/prisaradio/FFTXTJ2GOZCQHDTG4UD3E6OXVY.jpg" alt=""/>
-                
-                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-300 bg-indigo-400 opacity-0 hover:opacity-100 justify-center">
-                    <h1 class="tracking-widest text-mg title-font font-bold text-black mb-1">Cosplay</h1>
-                    <h2 class="title-font text-mg font-bold text-black hover:text-indigo-100 mb-3">06/02/2023</h2>
-                    <p class="leading-relaxed text-black">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-                    <button type="button" class="font-small uppercase rounded shadow-md 
-                    hover:bg-purple-500
-                      hover:shadow-lg p-2 focus:bg-white focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 "> ➕ 
-                    Apuntarse 
-                      </button>
-                </div>
-            </div>
-        </a>
-      </div>
-      <div class="lg:w-1/6 m-2 justify-center">
-        <a href="#">
-            <div class="flex relative justify-center">
-                <img alt="gallery" class="absolute inset-0 w-full h-full object-fit object-center rounded shadow-lg" src=" 
-                https://www.guiadecadiz.com/sites/default/files/2022/AGENDA/friki/Cartel%20II%20Salon%20de%20Manga.jpg" alt=""/>
-                
-                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-300 bg-indigo-400 opacity-0 hover:opacity-100 justify-center">
-                    <h1 class="tracking-widest text-mg title-font font-bold text-black mb-1">Cosplay</h1>
-                    <h2 class="title-font text-mg font-bold text-black hover:text-indigo-100 mb-3">06/02/2023</h2>
-                    <p class="leading-relaxed text-black">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-                    <button type="button" class="font-small uppercase rounded shadow-md 
-                    hover:bg-purple-500
-                      hover:shadow-lg p-2 focus:bg-white focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 "> ➕ 
-                    Apuntarse 
-                      </button>
-                </div>
-            </div>
-        </a>
-      </div>
-      <div class="lg:w-1/6 m-2 justify-center">
-        <a href="#">
-            <div class="flex relative justify-center">
-                <img alt="gallery" class="absolute inset-0 w-full h-full object-fit object-center rounded shadow-lg" src=" 
-                https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLgzk1RIAKuqL-kQgiCZBoyzL8EFFhj7HCwA&usqp=CAU" alt=""/>
-                
-                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-300 bg-indigo-400 opacity-0 hover:opacity-100 justify-center">
-                    <h1 class="tracking-widest text-mg title-font font-bold text-black mb-1">Cosplay</h1>
-                    <h2 class="title-font text-mg font-bold text-black hover:text-indigo-100 mb-3">06/02/2023</h2>
-                    <p class="leading-relaxed text-black">Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled waistcoat.</p>
-                    <button type="button" class="font-small uppercase rounded shadow-md 
-                    hover:bg-purple-500
-                      hover:shadow-lg p-2 focus:bg-white focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 "> ➕ 
-                    Apuntarse 
-                      </button>
-                </div>
-            </div>
-            
-            
-        </a>
-      </div>
-  
+
+       
+    
+     
 
 
 
@@ -305,7 +196,6 @@ hover:translate-x-0.5"
 </script>
         
   </body>
-=======
     <script>
         document.addEventListener('alpine:init', () => {
             Alpine.data('slider', () => ({
@@ -334,4 +224,3 @@ hover:translate-x-0.5"
     </script>
     
 </body>
->>>>>>> tania

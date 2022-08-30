@@ -23,9 +23,7 @@ Route::get('/', function () {
 
 Route::get('/home', [ProductController::class,'index']);
 
-// Route::get('/welcome', function () {
-    // return view('welcome');
-// });
+
 Route::get('/products', [ProductController::class,'index']);
 
 Route::get('/dashboard', function () {
@@ -35,4 +33,4 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 Route::resource('image', 'ImageController');
 
-Route::get ('send-email', [MailController::class,]);
+Route::get('/send-email',[MailController::class,'sendEmail']);

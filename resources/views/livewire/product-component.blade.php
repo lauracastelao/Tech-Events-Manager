@@ -15,9 +15,7 @@
 
                     </div>
                     <button type="button"
-                        class="font-small hover:bg-purple-500 hover:shadow-lg focus:bg-white focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 ">
-                        ➕
-                        Apuntarse</button>
+                        class="font-small hover:bg-purple-500 hover:shadow-lg focus:bg-white focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 " > <a href="send-email"> ➕ Apuntarse  </a> </button>
                 </div>
             </div>
 

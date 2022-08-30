@@ -14,9 +14,13 @@ public function sendEmail ()
     $details= [
     'title' => 'Friki Calendar',
     'body' => 'Gracias por suscribirte',
+     
+
     ];
 
     Mail::to("alt.s3-dogawsw2@yopmail.com")->send(new TestMail($details));
-    return "Email enviado";
+    return "Email enviado" ;
 }
+
 }
+
