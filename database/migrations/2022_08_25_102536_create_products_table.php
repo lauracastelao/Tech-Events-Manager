@@ -16,10 +16,10 @@ class CreateProductsTable extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('date')->nullable();
-            $table->integer('max participants')->nullable();
+            $table->string('date');
+            $table->integer('max_participants');
             $table->string('description');
-            $table->string('image')->nullable();
+            $table->string('image');
             $table->timestamps();
         });
     }

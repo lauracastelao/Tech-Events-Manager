@@ -12,8 +12,7 @@ class Event extends Model
 
     /**
      * The attributes that are mass assignable.
-     *
-     * @var array<int, string>
+ng>
      */
     protected $fillable = [
         'title',

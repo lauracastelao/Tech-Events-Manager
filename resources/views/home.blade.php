@@ -8,6 +8,7 @@
 
     <!-- Tailwind CSS Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.1/tailwind.min.css">
+    <link rel="stylesheet" href="{{asset("css/app.css")}}">
 </head>
 
 <body class="bg-gradient-to-r from-indigo-300 via-purple-500 to-pink-300">
@@ -43,7 +44,7 @@
     <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
 
     <article x-data="slider" class="relative w-full flex flex-shrink-0 overflow-hidden shadow-2xl">
-        <div class="rounded-full bg-gray-600 text-white absolute top-5 right-5 text-sm px-2 text-center z-10">
+        <div class="rounded-full absolute top-5 right-5 text-sm px-2 text-center z-10">
             <span x-text="currentIndex"></span>/
             <span x-text="images.length"></span>
         </div>
@@ -53,7 +54,7 @@
                 x-transition:enter="transition transform duration-300" x-transition:enter-start="opacity-0"
                 x-transition:enter-end="opacity-100" x-transition:leave="transition transform duration-300"
                 x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0">
-                <img :src="image" alt="Image" class="absolute inset-0 z-10 h-full w-full object-cover " />
+                <img :src="image" alt="Image" class="absolute  z-10 h-full w-full object-cover center" />
                 <figcaption
                     class="sm:text-3xl text-2xl absolute inset-x-0 bottom-1 z-20 w-96 mx-auto p-4 font-gray font-bold text-center ">
                     PRÓXIMOS EVENTOS
@@ -87,7 +88,9 @@ hover:translate-x-0.5"
 
     </section>
 
-
+    <div class="test">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eos obcaecati, excepturi, ratione vel quas quasi doloribus ut, sapiente soluta similique voluptatem architecto fugiat nisi quidem? Alias, velit! Ad, repudiandae?
+    </div>
 
     <script>
         document.addEventListener('alpine:init', () => {
@@ -115,5 +118,5 @@ hover:translate-x-0.5"
             }))
         })
     </script>
-
+    
 </body>
