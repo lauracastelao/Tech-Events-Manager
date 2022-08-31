@@ -6,6 +6,7 @@
   }
   body {
     display : flex;
+    width: 70%;
     flex-wrap : wrap;
     align-items : center;
     justify-content : center;  
@@ -62,7 +63,7 @@
     position : relative;
     top : -140px;
     padding : 10px 15px;
-    color : #111;
+    color : rgb(186, 32, 32);
     text-align:left;
     
     visibility : hidden;

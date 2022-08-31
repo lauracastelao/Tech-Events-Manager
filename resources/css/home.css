@@ -1,9 +1,6 @@
-#container-principal{
-    display: flex;
-    flex-direction: column;
+#cards_container{
+    width: 100px;
 }
-
-.container-cards{
- display: flex;
-
+#bodyContainer{
+    background-color: blue;
 }

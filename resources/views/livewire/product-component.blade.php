@@ -24,6 +24,6 @@
     </body>
 @endforeach
 
+{{ $products->links() }}
 </div>
 
-{{ $products->links() }}

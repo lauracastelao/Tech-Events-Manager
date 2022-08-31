@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 
-<body class="bg-gradient-to-r from-indigo-300 via-purple-500 to-pink-300" id="container-principal">
+<body class="bg-gradient-to-r from-indigo-300 via-purple-500 to-pink-300" id="bodyContainer">
    
     <nav class="flex py-3  text-white">
         <div class="px-12  flex">
@@ -36,7 +36,7 @@
     <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
 
     <article x-data="slider" class="relative w-full flex flex-shrink-0 overflow-hidden shadow-2xl">
-        <div class="rounded-full absolute top-5 right-5 text-sm px-2 text-center z-10">
+        <div class="rounded-full absolute top-5  text-sm px-2 text-center z-20">
             <span x-text="currentIndex"></span>/
             <span x-text="images.length"></span>
         </div>
@@ -73,13 +73,14 @@ hover:translate-x-0.5"
             </svg>
         </button>
     </article>
+    
+    
+</section>
 
-    <div class="container-cards">
-        <livewire:product-component />
-
-    </div>
-
-    </section>
+<div class="flex mt-20 width-2" id="cards_container">
+    <livewire:product-component />
+    <h1>sklgjlksjglkdfjgkldjfgl</h1>
+</div>
 
 
 
