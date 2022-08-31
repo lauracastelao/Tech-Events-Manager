@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\RolesController;
 use App\Http\Controllers\SessionsController;
+use App\Models\Product;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -34,3 +36,5 @@ require __DIR__.'/auth.php';
 Route::resource('image', 'ImageController');
 
 Route::get('/send-email',[MailController::class,'sendEmail']);
+
+

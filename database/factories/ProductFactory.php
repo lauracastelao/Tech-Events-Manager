@@ -20,7 +20,8 @@ class ProductFactory extends Factory
             'date' => $this->faker->date('Y-m-d','now'),
             'max_participants' => $this->faker->randomNumber(),
             'description' => $this->faker->sentence(),
-            'image'=>$this->faker->imageUrl(640,480),
+            'image'=>$this->faker->imageUrl(100, 100,'cats')// 'http://lorempixel.com/640/480/'
+
         ];
     }
 }

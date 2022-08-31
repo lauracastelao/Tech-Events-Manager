@@ -7,13 +7,15 @@ use App\Models\Event;
 
 class EventsController extends Controller
 {
-    public function index(){
+    public function index()
+    {
 
         $data = Event::all();
         return view('home', compact('data'));
     }
 
-    public function create(){
+    public function create()
+    {
         return view('crud');
         //el formulario donde agregamos los datos
     }
@@ -31,7 +33,8 @@ class EventsController extends Controller
         return redirect()->route("events.index")->with("success", "Agregado con exito!");
     }
 
-    public function show( Event $events){
+    public function show(Event $events)
+    {
         return view('welcome');
     }
 }

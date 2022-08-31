@@ -2,3 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 @import "test.css";
+@import "product-component.css";

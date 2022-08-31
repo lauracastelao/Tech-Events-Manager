@@ -1,8 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href= "{{asset("css/product-component.css")}}">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
 <div class="flex flex-wrap justify-center">
 
     @foreach ($products as $product)
-        <div class="lg:w-1/6 m-2">
-            <div class="flex relative justify-center">
+        <div class="lg:w-1/6 m-2" id="card">
+            <a href= "detail-component">
+            <div class="flex relative justify-center" id= "contenedor">
                 <img alt="gallery" class="absolute inset-0 w-full h-full object-fit object-center rounded"
                     src="{{ $product->image }}" alt="" />
 
@@ -15,15 +32,17 @@
 
                     </div>
                     <button type="button"
-                        class="font-small hover:bg-purple-500 hover:shadow-lg focus:bg-white focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 " > <a href="send-email"> ➕ Apuntarse  </a> </button>
+                        class="font-small hover:bg-purple-500 hover:shadow-lg focus:bg-white focus:shadow-lg focus:outline-none focus:ring-0 transition duration-150 " id= "lulu" > <a href="send-email"> ➕ Apuntarse  </a> </button>
                 </div>
             </div>
 
         </div>
     @endforeach
 
-
+    
 </div>
 <div class="flex flex-wrap justify-center">
     {{ $products->links() }}
 </div>
+</body>
+</html>
