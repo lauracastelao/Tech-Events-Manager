@@ -1,0 +1,9 @@
+#container-principal{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-cards{
+ display: flex;
+
+}
