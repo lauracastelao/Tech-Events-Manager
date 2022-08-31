@@ -18,8 +18,8 @@ class ProductFactory extends Factory
         return [
             'title' => $this->faker->sentence(),
             'date' => $this->faker->date('Y-m-d','now'),
-            // 'time' => $this->faker->time(),
-            'max_participants' => $this->faker->randomNumber(),
+            'time' => $this->faker->time(),
+            'max_participants' => $this->faker->numberBetween(1,100),
             'description' => $this->faker->sentence(),
             'image'=>$this->faker->imageUrl(640,480),
         ];

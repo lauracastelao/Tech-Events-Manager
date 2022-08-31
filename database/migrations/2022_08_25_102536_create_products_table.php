@@ -17,7 +17,7 @@ class CreateProductsTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('date');
-           
+            $table->string('time');
             $table->integer('max_participants');
             $table->string('description');
             $table->string('image');
