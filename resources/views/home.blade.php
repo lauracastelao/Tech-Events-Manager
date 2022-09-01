@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <!-- Tailwind CSS Link -->
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.1/tailwind.min.css">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
@@ -76,7 +76,6 @@ hover:translate-x-0.5"
 
     <div class="container-cards">
         <livewire:product-component />
-
     </div>
 
     </section>

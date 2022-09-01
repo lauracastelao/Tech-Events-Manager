@@ -2,11 +2,11 @@
     margin : 0;
     padding: 0;
     box-sizing : border-box;
-    font-familly : "Poppins", sans-serif;
+    font-family : "Poppins", sans-serif;
   }
   body {
     display : flex;
-    flex-warp : warp;
+    flex-wrap : wrap;
     align-items : center;
     justify-content : center;  
     background-color: #ac8edf;
@@ -19,7 +19,7 @@
     display : flex;
     align-items : center;
     justify-content : center;
-    flex-warp : warp;
+    flex-wrap : wrap;
     padding : 30px;  
   }
   
