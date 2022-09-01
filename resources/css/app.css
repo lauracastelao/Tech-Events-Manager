@@ -1,5 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@import "test.css";
-@import "product-component.css";
+@import "tailwind";
+@import "detail";
+@import "product-component";
+@import "home";
+@import "navbar";
+@import "slider";

@@ -1,4 +1,4 @@
-@include('Layouts.layout')
+@include('layouts.layout')
 <body>
     <div class=container>
         <div class=card>
