@@ -6,4 +6,9 @@
 .container-cards{
  display: flex;
 
-}
+} 
+
+#barrita{
+width: 20vh;
+  }
+

@@ -14,7 +14,7 @@
 <body class="bg-gradient-to-r from-indigo-300 via-purple-500 to-pink-300">
     <title>@yield('title')Friki Calendar</title>
 
-    <nav class="flex py-5 bg-purple-500 text-white">
+    <nav class="flex py-5 bg-purple-500 text-white" id= "barrita">
         <div class="w-1/2 px-12 mr-auto flex">
             <p class="text-2xl font-bold font-sans">Friki Calendar</p>
             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cat" class="ml-4 mt-2 w-4 h-4"
