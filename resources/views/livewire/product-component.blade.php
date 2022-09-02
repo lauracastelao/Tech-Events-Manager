@@ -1,3 +1,6 @@
+
+
+
 @foreach ($products as $product)
     
     <body>
@@ -7,9 +10,12 @@
                     <img href="#" src="{{ $product->image }}" alt="" />
                 </div>
                 <div class=content>
-                    <a href="detail">
+
+                    <a href="products/{{$product->id}}">
                         <h3>{{ $product->title }}</h3>
                     </a>
+
+
                     <p class="product_date">{{ $product->date }}/<strong>{{$product->time}}</strong></p>
                     <p>Max Participants:{{$product->max_participants}}</p>
                     <p class="product_description">{{ $product->description }}</p>
@@ -27,7 +33,7 @@
 
                 </div>
 
-
+               
 
             </div>
         </div>
@@ -38,4 +44,5 @@
     
 </div>
 
+    </div>
 {{ $products->links() }}

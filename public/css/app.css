@@ -1,4 +1,5 @@
 body{
+    display: flex;
     background-color: blue;
 }
 * { 
@@ -15,22 +16,20 @@ body{
     background-color: #ac8edf;
     min-height : 800px;
   }
+
   
   .container {
+   
     position : relative;
-    width : 1100px;
-    display : flex;
-    align-items : center;
-    justify-content : center;
-    flex-wrap : wrap;
-    padding : 30px;  
+    padding : 20px;  
+    margin-top: 50px;
   }
   
   .container .card {
-    position: relative;
-    max-width : 300px;
+   
+    width : 300px;
     height : 215px;  
-    background-color : #fff;
+    background-color : rgb(255, 255, 255);
     margin : 30px 10px;
     padding : 20px 15px;
     
@@ -41,7 +40,7 @@ body{
     border-radius : 15px;
   }
   .container .card:hover {
-    height : 320px;    
+    height : 310px;    
   }
   
   
@@ -99,6 +98,7 @@ width: 1000px;
  flex-wrap: wrap;
 
 }
+
 /*
 ! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
 *//*

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 
-<body class="bg-gradient-to-r from-indigo-300 via-purple-500 to-pink-300" id="container-principal">
+<body class="bg-gradient-to-r from-indigo-300 via-purple-500 to-pink-300">
    
     <nav class="flex py-3  text-white">
         <div class="px-12  flex">
@@ -74,7 +74,7 @@ hover:translate-x-0.5"
         </button>
     </article>
 
-    <div class="container-cards">
+    <div class="flex">
         <livewire:product-component />
     </div>
 
@@ -212,5 +212,5 @@ hover:translate-x-0.5"
             }))
         })
     </script>
-
 </body>
+
