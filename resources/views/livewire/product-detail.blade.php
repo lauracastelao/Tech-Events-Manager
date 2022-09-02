@@ -6,7 +6,7 @@
                 <img href="#" src="{{ $product->image }}" alt="" />
             </div>
             <div class=content>
-                <a href="detail">
+                <a href="product/{{ $product->id }}">
                     <h3>{{ $product->title }}</h3>
                 </a>
                 <p>{{ $product->date }}</p>

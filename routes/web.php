@@ -9,7 +9,10 @@ use App\Http\Controllers\SessionsController;
 
 Route::get('/home', [ProductController::class, 'index']);
 
+
 Route::get('/products', [ProductController::class, 'index']);
+
+Route::get('/products/{id}',[ProductController::class, 'show'])->name('products.show');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -18,7 +21,3 @@ Route::get('/dashboard', function () {
 require __DIR__ . '/auth.php';
 Route::resource('image', 'ImageController');
 
-
-Route::get('/detail', function () {
-    return view('detail');
-});
