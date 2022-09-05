@@ -1,9 +1,9 @@
 
-
+<div>
 
 @foreach ($products as $product)
     
-    <body>
+    
         <div class=container>
             <div class=card>
                 <div class=image>
@@ -27,7 +27,7 @@
 
             </div>
         </div>
-    </body>
+   
         @endforeach
         
 

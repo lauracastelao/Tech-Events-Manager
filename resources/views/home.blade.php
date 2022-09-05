@@ -75,7 +75,7 @@ hover:translate-x-0.5"
     </article>
 
     <div class="flex">
-        <livewire:product-component />
+       <livewire:product-component/>
 
     </div>
 
