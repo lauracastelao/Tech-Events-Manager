@@ -1,3 +1,5 @@
+@include('Layouts.layout')
+
 <!DOCTYPE html>
 <html lang="en">
 

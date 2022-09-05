@@ -79,7 +79,10 @@ body{
     border-radius: 10px;
  }
 
-
+body{
+    display: flex;
+    flex-direction: column;
+}
 /*
 ! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
 *//*
