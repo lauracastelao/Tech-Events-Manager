@@ -33,6 +33,7 @@
                     @endauth
                 </div>
             @endif
+            <button class="btn"><a href="products/create">Crear Evento</a></button>
     </nav>
     <!-- component -->
     <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
@@ -75,12 +76,13 @@ hover:translate-x-0.5"
             </svg>
         </button>
     </article>
-
+    <div class="containerCards">
     @foreach ($products as $product)
 
     <livewire:product-component :product="$product"/>
      
     @endforeach
+    </div>
 
     </section>
 
