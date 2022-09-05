@@ -19,4 +19,8 @@ class ProductController extends Controller
 
       return view('detail',['product'=>$product]);
    }
+
+   public function create(){
+      return view('create');
+   }
 }
