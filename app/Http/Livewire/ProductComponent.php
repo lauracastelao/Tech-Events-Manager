@@ -4,11 +4,12 @@ namespace App\Http\Livewire;
 
 use App\Models\Product;
 use Livewire\Component;
-use Livewire\WithPagination;
+
 
 class ProductComponent extends Component
 {
-    use WithPagination;
+   
+    public $product;
 
     public function destroy($id){
 
@@ -17,8 +18,7 @@ class ProductComponent extends Component
     }
     public function render()
     {
-        $products= Product::orderBy('id','desc')->paginate(10);
-        return view('livewire.product-component', compact('products'));
+        return view('livewire.product-component');
     }
         
 }

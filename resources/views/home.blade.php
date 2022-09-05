@@ -1,3 +1,5 @@
+@include('Layouts.layout')
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -74,10 +76,11 @@ hover:translate-x-0.5"
         </button>
     </article>
 
-    <div class="flex">
-       <livewire:product-component/>
+    @foreach ($products as $product)
 
-    </div>
+    <livewire:product-component :product="$product"/>
+     
+    @endforeach
 
     </section>
 

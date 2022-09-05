@@ -7,12 +7,20 @@ use App\Http\Controllers\RolesController;
 use App\Http\Controllers\SessionsController;
 
 
-Route::get('/home', [ProductController::class, 'index']);
 
+Route::name('products')->group(function(){
 
-Route::get('/products', [ProductController::class, 'index']);
+    
+    Route::get('/home', [ProductController::class, 'index']);
 
-Route::get('/products/{id}',[ProductController::class, 'show'])->name('products.show');
+    Route::get('/products/create',[ProductController::class, 'create']);
+
+    
+
+    Route::get('/products/{id}',[ProductController::class, 'show'])->name('products.show');
+
+});
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');

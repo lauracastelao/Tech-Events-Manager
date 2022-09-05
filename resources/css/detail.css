@@ -1,4 +1,6 @@
+
 body{
     display: flex;
-    background-color: blue;
+    justify-content: center;
+   background-color: rgb(37, 174, 179);
 }
