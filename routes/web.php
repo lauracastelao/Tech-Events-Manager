@@ -13,7 +13,7 @@ Route::name('products')->group(function(){
     
     Route::get('/', [ProductController::class, 'index']);
 
-    Route::get('/products/create',[ProductController::class, 'create']);
+    Route::get('/products/create',[ProductController::class, 'create'])->name('products.create');
 
     
 

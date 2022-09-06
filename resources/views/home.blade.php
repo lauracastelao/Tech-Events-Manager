@@ -33,7 +33,7 @@
                     @endauth
                 </div>
             @endif
-            <button class="btn"><a href="products/create">Crear Evento</a></button>
+            <button class="btn"><a href="{{ url('/products/create') }}">Crear Evento</a></button>
     </nav>
     <!-- component -->
     <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
