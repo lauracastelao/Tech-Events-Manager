@@ -11,7 +11,7 @@ use App\Http\Controllers\SessionsController;
 Route::name('products')->group(function(){
 
     
-    Route::get('/home', [ProductController::class, 'index']);
+    Route::get('/', [ProductController::class, 'index']);
 
     Route::get('/products/create',[ProductController::class, 'create']);
 
