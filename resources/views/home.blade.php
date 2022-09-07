@@ -77,11 +77,11 @@ hover:translate-x-0.5"
             </svg>
         </button>
     </article>
-    <div class="containerCards">
-        @if(session('message')) 
+     @if(session('message')) 
         <div class="alert">
-           {{session('message')}}
+          {{session('message')}}
         </div>
+    
        @endif
 
     @foreach ($products as $product)

@@ -9,7 +9,7 @@
       </div>
   
       
-    <form action="{{route('products.store')}}" method="POST" class="mb-4" class="w-full max-w-xl  p-6">
+    <form action="{{route('products.store')}}" method="POST" enctype="multipart/form-data" class="mb-4" class="w-full max-w-xl  p-6">
        @csrf
        @method('POST') 
         <div class="flex  items-center justify-center my-2 mx-4 md:mx-0 flex-wrap -mx-3 mb-6">
@@ -34,7 +34,8 @@
            </div>
            <div class="w-full md:w-full px-3 mb-6">
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for='Password'>Event Image</label>
-            <input class="appearance-none block full bg-white text-gray-900 font-medium border border-gray-400 rounded-lg py-3 px-3 leading-tight focus:outline-none" name="image" type='text'>
+            <input class="appearance-none block full bg-white text-gray-900 font-medium border border-gray-400 rounded-lg py-3 px-3 leading-tight focus:outline-none" name="image" type='file'>
+           {{--  <img src="/images/{{ $product->image }}" width="100px"> --}}
            </div>                  
          </div>
       <div class="w-full md:w-full px-3 mb-6">

@@ -1,7 +1,7 @@
 <div class=container>
     <div class=card>
         <div class=image>
-            <img href="#" src="{{ $product->image }}" alt="" />
+            <img src="/images/{{ $product->image }}" width="100px">
         </div>
         <div class=content>
 
@@ -14,16 +14,19 @@
             <p class="product_description">{{ $product->description }}</p>
             <button class="btn"><a href="#">Apuntarme</a></button>
             
+         <div class="flex justify-center">
+            
             <form action="{{ route('products.delete', $product->id) }}" method="post">
                 @csrf
                 @method('DELETE')
                 <button class="btn mt-3">Eliminar</button>
-            </form>  
-           <form action="{{ route('products.edit', $product->id) }}" method="post">
+             </form>  
+            <form action="{{ route('products.edit', $product->id) }}" method="post">
                 @csrf
                 @method('GET')
                 <button class="btn mt-3">Editar</button>
             </form>   
+        </div>
         </div>
     </div>
 </div>

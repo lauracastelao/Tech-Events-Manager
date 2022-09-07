@@ -15,9 +15,9 @@ class ProductController extends Controller
       $this->product = $product;
    }
    
-   public function index(){
-     
-      $products= Product::orderBy('id','desc')->paginate(10);
+   public function index(){     
+      
+      $products = Product::orderBy('id','desc')->paginate(10);
       return view('home',["products"=>$products]);
    }
 
@@ -43,8 +43,16 @@ class ProductController extends Controller
        'time'=>$request->time,       
        'max_participants'=>$request->max_participants,
        'description'=>$request->description,
-       'image'=>$request->image   
-       ]);   
+       'image'=>$request->image
+       ]);  
+
+       if ($image = $request->file('image')) {
+         $destinationPath = 'image/';
+         $profileImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
+         $image->move($destinationPath, $profileImage);
+         $input['image'] = "$profileImage";
+     }
+      
        $product->save();
        return redirect()->route('products.index')->with('message','Event added');
       } catch(\Throwable $th){
@@ -81,6 +89,13 @@ class ProductController extends Controller
       $product->max_participants = $request->max_participants;
       $product->description = $request->description;
       $product->image = $request->image;
+
+      if ($image = $request->file('image')) {
+         $destinationPath = 'images/';
+         $profileImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
+         $image->move($destinationPath, $profileImage);
+         $input['image'] = "$profileImage";
+     } 
 
       $product->update();
 

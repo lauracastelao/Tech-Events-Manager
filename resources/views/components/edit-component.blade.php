@@ -9,7 +9,7 @@
       </div>
   
       
-    <form action="{{route('products.update',['id'=>$product->id])}}" method="post" class="mb-4" class="w-full ">
+    <form action="{{route('products.update',['id'=>$product->id])}}" enctype="multipart/form-data" method="post" class="mb-4" class="w-full ">
        @csrf
        @method('PUT') 
         <div class="flex  items-center justify-center my-2 mx-4 md:mx-0 flex-wrap -mx-3 mb-6">
@@ -34,7 +34,8 @@
            </div>
            <div class="w-full md:w-full px-3 mb-6">
             <label class="block " for='Password'>Event Image</label>
-            <input class="appearance-none " name="image" type='text' value="{{$product->image ?? old('image')}}">
+            <input class="appearance-none " name="image" type='file' value="{{$product->image ?? old('image')}}">
+            <img src="/images/{{ $product->image }}" width="100px">
            </div>                  
          </div>
       <div class="w-full md:w-full px-3 mb-6">
