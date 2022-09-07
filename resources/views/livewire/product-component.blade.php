@@ -20,6 +20,7 @@
         </div>
       </div>
     </div>
+</div>
     {{-- <div class="card">
       <div class="card__header">
         <img src="https://source.unsplash.com/600x400/?food" alt="card__image" class="card__image" width="600">
