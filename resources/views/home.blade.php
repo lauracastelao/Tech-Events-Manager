@@ -9,12 +9,12 @@
 
 
     <!-- Tailwind CSS Link -->
-  
+
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 
 <body class="bg-gradient-to-r from-indigo-300 via-purple-500 to-pink-300">
-   
+
     <nav class="flex py-3  text-white">
         <div class="px-12  flex">
             <p class="text-2xl font-bold font-sans">Friki Calendar</p>
@@ -33,7 +33,7 @@
                     @endauth
                 </div>
             @endif
-            <button class="btn"><a href="products/create">Crear Evento</a></button>
+            <button class="btn"><a href="{{ url('/create')}}">Crear Evento</a></button>
     </nav>
     <!-- component -->
     <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
@@ -59,7 +59,7 @@
 
         <button @click="back()"
             class="absolute left-14 top-1/2 -translate-y-1/2 w-11 h-11 flex justify-center items-center rounded-full shadow-md z-10 bg-gray-100 hover:bg-gray-200">
-            <svg class=" w-8 h-8 font-bold transition duration-500 ease-in-out transform motion-reduce:transform-none text-gray-500 hover:text-gray-600 
+            <svg class=" w-8 h-8 font-bold transition duration-500 ease-in-out transform motion-reduce:transform-none text-gray-500 hover:text-gray-600
 hover:-translate-x-0.5"
                 fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7">
@@ -69,7 +69,7 @@ hover:-translate-x-0.5"
 
         <button @click="next()"
             class="absolute right-14 top-1/2 translate-y-1/2 w-12 h-11 lex justify-center items-center rounded-full shadow-md z-10 bg-gray-100 hover:bg-gray-500">
-            <svg class=" w-8 h-8 font-bold transition duration-500 ease-in-out transform motion-reduce:transform-none text-gray-500 hover:text-gray-600 
+            <svg class=" w-8 h-8 font-bold transition duration-500 ease-in-out transform motion-reduce:transform-none text-gray-500 hover:text-gray-600
 hover:translate-x-0.5"
                 fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path>
@@ -80,7 +80,7 @@ hover:translate-x-0.5"
     @foreach ($products as $product)
 
     <livewire:product-component :product="$product"/>
-     
+
     @endforeach
     </div>
 
