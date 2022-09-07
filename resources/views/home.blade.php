@@ -33,10 +33,10 @@
                             <a href="{{ route('register') }}" class="ml-6 text-sl text-white-900 font-bold">Registro</a>
                         @endif
                     @endauth
+                    <button class="ml-6 text-sl text-white-900 font-bold "><a href="{{ url('/create')}}">Crear Evento</a></button>
                 </div>
             @endif
-            <button class="btn"><a href="{{ url('/create')}}">Crear Evento</a></button>
-    </nav>
+        </nav>
     <!-- component -->
     <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
 

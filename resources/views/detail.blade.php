@@ -1,18 +1,25 @@
 @include('Layouts.layout')
 
-<div class=container>
-    <div class=card>
-        <div class=image>
-            <img href="#" src="{{ $product->image }}" alt="" />
-        </div>
-        <div class=content>
-            <a href="product/{{ $product->id }}">
-                <h3>{{ $product->title }}</h3>
-            </a>
-            <p>{{ $product->date }}</p>
-            <p>{{ $product->description }}</p>
+<div class="container">
+    <div class="card">
+      <div class="card__header">
+        <img src="{{ $product->image }}" alt="card__image" class="card__image" width="600">
+      </div>
+      <div class="card__body">
+        <span class="tag tag-blue">Apuntarme</span>
+        <a href="products/{{ $product->id }}">
+            <h4>{{ $product->title }}</h4>
+        </a>
+        <p>{{ $product->description }}</p>
+      </div>
+      <div class="card__footer">
+        <div class="user">
 
-            <button class="btn"><a href="#">Apuntarme</a></button>
+          <div class="user__info">
+            <h5>Max participants:{{ $product->max_participants }}</h5>
+            <small>{{ $product->date }}</small>
+          </div>
         </div>
+      </div>
     </div>
 </div>
