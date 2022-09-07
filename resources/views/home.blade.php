@@ -9,13 +9,15 @@
 
 
     <!-- Tailwind CSS Link -->
-  
+
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
+<div class="container-general">
 
-<body class="bg-gradient-to-r from-indigo-300 via-purple-500 to-pink-300">
-   
-    <nav class="flex py-3  text-white">
+
+<div class="bg-gradient-to-r from-indigo-800 via-purple-500 to-pink-300  w-screen">
+
+    <nav class="flex py-3  text-white w-screen">
         <div class="px-12  flex">
             <p class="text-2xl font-bold font-sans">Friki Calendar</p>
 
@@ -33,11 +35,12 @@
                     @endauth
                 </div>
             @endif
+            <button class="btn"><a href="{{ url('/create')}}">Crear Evento</a></button>
     </nav>
     <!-- component -->
     <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
 
-    <article x-data="slider" class="relative w-full flex flex-shrink-0 overflow-hidden shadow-2xl">
+    <article x-data="slider" class="relative w-full flex flex-shrink-0 overflow-hidden shadow-2xl w-screen">
         <div class="rounded-full absolute top-5 right-5 text-sm px-2 text-center z-10">
             <span x-text="currentIndex"></span>/
             <span x-text="images.length"></span>
@@ -58,7 +61,7 @@
 
         <button @click="back()"
             class="absolute left-14 top-1/2 -translate-y-1/2 w-11 h-11 flex justify-center items-center rounded-full shadow-md z-10 bg-gray-100 hover:bg-gray-200">
-            <svg class=" w-8 h-8 font-bold transition duration-500 ease-in-out transform motion-reduce:transform-none text-gray-500 hover:text-gray-600 
+            <svg class=" w-8 h-8 font-bold transition duration-500 ease-in-out transform motion-reduce:transform-none text-gray-500 hover:text-gray-600
 hover:-translate-x-0.5"
                 fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7">
@@ -68,22 +71,23 @@ hover:-translate-x-0.5"
 
         <button @click="next()"
             class="absolute right-14 top-1/2 translate-y-1/2 w-12 h-11 lex justify-center items-center rounded-full shadow-md z-10 bg-gray-100 hover:bg-gray-500">
-            <svg class=" w-8 h-8 font-bold transition duration-500 ease-in-out transform motion-reduce:transform-none text-gray-500 hover:text-gray-600 
+            <svg class=" w-8 h-8 font-bold transition duration-500 ease-in-out transform motion-reduce:transform-none text-gray-500 hover:text-gray-600
 hover:translate-x-0.5"
                 fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path>
             </svg>
         </button>
     </article>
-
+</div>
+    <div class="containerCards">
     @foreach ($products as $product)
 
     <livewire:product-component :product="$product"/>
-     
+
     @endforeach
+    </div>
 
     </section>
-
 
 
     <script>
@@ -111,6 +115,7 @@ hover:translate-x-0.5"
                 },
             }))
         })
-    </script>
-</body>
+        </script>
+
+</div>
 

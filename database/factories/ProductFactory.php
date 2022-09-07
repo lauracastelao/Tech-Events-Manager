@@ -7,12 +7,24 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ProductFactory extends Factory
 {
-   
+
     /**
      * Define the model's default state.
      *
      * @return array
      */
+
+    // public function definition(){
+    //     return [
+    //         'title',
+    //         'date',
+    //         'time',
+    //         'max_participants',
+    //         'description',
+    //         'image',
+    //     ];
+
+    // }
     public function definition()
     {
         return [
@@ -24,4 +36,7 @@ class ProductFactory extends Factory
             'image'=>$this->faker->imageUrl(640,480),
         ];
     }
+
+
+
 }

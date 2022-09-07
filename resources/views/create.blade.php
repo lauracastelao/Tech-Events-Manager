@@ -1,3 +1,2 @@
 @include('Layouts.layout')
-
-<livewire:create-component1/>
+<x-create_component2></x-create_component2>

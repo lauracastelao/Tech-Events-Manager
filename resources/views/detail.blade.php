@@ -12,10 +12,7 @@
             <p>{{ $product->date }}</p>
             <p>{{ $product->description }}</p>
 
+            <button class="btn"><a href="#">Apuntarme</a></button>
         </div>
-
-        <button class="btn"><a href="#">Apuntarme</a></button></button>
-
-
     </div>
 </div>

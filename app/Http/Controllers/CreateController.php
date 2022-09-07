@@ -6,16 +6,16 @@ use App\Models\Product;
 
 use Illuminate\Routing\Controller;
 
-class ProductController extends Controller
+class CreateController extends Controller
 {
    public function index(){
-      
-      return view('home');
+
+      return view('index');
    }
 
    public function show( $id )
    {
-     
+
       $product = Product::find($id);
 
       return view('detail',['product'=>$product]);
@@ -25,5 +25,5 @@ class ProductController extends Controller
       return view('create');
    }
 
-   
+
 }
