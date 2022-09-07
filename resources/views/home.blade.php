@@ -12,10 +12,12 @@
 
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
+<div class="container-general">
 
-<body class="bg-gradient-to-r from-indigo-300 via-purple-500 to-pink-300">
 
-    <nav class="flex py-3  text-white">
+<div class="bg-gradient-to-r from-indigo-800 via-purple-500 to-pink-300  w-screen">
+
+    <nav class="flex py-3  text-white w-screen">
         <div class="px-12  flex">
             <p class="text-2xl font-bold font-sans">Friki Calendar</p>
 
@@ -38,7 +40,7 @@
     <!-- component -->
     <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
 
-    <article x-data="slider" class="relative w-full flex flex-shrink-0 overflow-hidden shadow-2xl">
+    <article x-data="slider" class="relative w-full flex flex-shrink-0 overflow-hidden shadow-2xl w-screen">
         <div class="rounded-full absolute top-5 right-5 text-sm px-2 text-center z-10">
             <span x-text="currentIndex"></span>/
             <span x-text="images.length"></span>
@@ -76,6 +78,7 @@ hover:translate-x-0.5"
             </svg>
         </button>
     </article>
+</div>
     <div class="containerCards">
     @foreach ($products as $product)
 
@@ -85,7 +88,6 @@ hover:translate-x-0.5"
     </div>
 
     </section>
-
 
 
     <script>
@@ -113,6 +115,7 @@ hover:translate-x-0.5"
                 },
             }))
         })
-    </script>
-</body>
+        </script>
+
+</div>
 

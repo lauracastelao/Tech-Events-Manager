@@ -14,8 +14,5 @@
 
             <button class="btn"><a href="#">Apuntarme</a></button>
         </div>
-
-
-
     </div>
 </div>

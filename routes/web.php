@@ -15,7 +15,7 @@ Route::name('products')->group(function(){
 
     Route::get('/create',[ProductController::class, 'create'])->name('products.create');
 
-    Route::post('/products',[ProductController::class,'store'])->name('products.store');
+    Route::post('/',[ProductController::class,'store'])->name('products.store');
 
     Route::get('/products/{id}',[ProductController::class, 'show'])->name('products.show');
 
