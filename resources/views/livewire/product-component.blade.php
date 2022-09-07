@@ -10,11 +10,12 @@
             </a>
 
 
-            <p class="product_date">{{ $product->date }}/<strong>{{ $product->time }}</strong></p>
+            <p class="product_date">{{ $product->date }}/
+            <strong>{{ $product->time }}</strong></p>
             <p>Max Participants:{{ $product->max_participants }}</p>
             <p class="product_description">{{ $product->description }}</p>
             <button class="btn"><a href="#">Apuntarme</a></button>
-            <button class="btn"><a href="products/create">Crear Evento</a></button>
+           
         </div>
 
     </div>

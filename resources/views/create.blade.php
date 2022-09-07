@@ -1,2 +1,16 @@
 @include('Layouts.layout')
- <x-create-component2></x-create-component2>
+
+
+ @section('content')
+ <div class=>
+
+    @if(session('message')) 
+     <div class="alert">
+        {{session('message')}}
+     </div>
+    @endif
+    <x-create-component></x-create-component>
+
+   
+
+ </div>

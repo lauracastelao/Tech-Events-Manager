@@ -9,15 +9,12 @@ use App\Http\Controllers\SessionsController;
 
 
 Route::name('products')->group(function(){
-
+    Route::get('/', [ProductController::class, 'index'])->name('.index');
+    Route::get('/products/create',[ProductController::class, 'create'])->name('.create');
+    Route::post('/', [ProductController::class, 'store'])->name('.store');
     
-    Route::get('/', [ProductController::class, 'index']);
-
-    Route::get('/products/create',[ProductController::class, 'create'])->name('products.create');
-
     
-
-    Route::get('/products/{id}',[ProductController::class, 'show'])->name('products.show');
+    Route::get('/products/{id}',[ProductController::class, 'show'])->name('.show');
 
 });
 
