@@ -19,9 +19,12 @@
                 @method('DELETE')
                 <button class="btn mt-3">Eliminar</button>
             </form>  
-           
+           <form action="{{ route('products.edit', $product->id) }}" method="post">
+                @csrf
+                @method('GET')
+                <button class="btn mt-3">Editar</button>
+            </form>   
         </div>
-        
     </div>
 </div>
 

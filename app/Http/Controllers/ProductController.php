@@ -8,6 +8,12 @@ use Illuminate\Routing\Controller;
 
 class ProductController extends Controller
 {
+   private Product $product;
+
+   public function __construct(Product $product)
+   {
+      $this->product = $product;
+   }
    
    public function index(){
      
@@ -60,4 +66,24 @@ class ProductController extends Controller
 
     }
    
+    public function edit($id)
+    {
+      $product = $this->product->find($id);
+      return view('edit', ['product'=>$product]);
+
+    }
+    public function update($id, Request $request)
+    {
+      $product = $this->product->find($id);
+      $product->title = $request->title;
+      $product->date = $request->date;
+      $product->time = $request->time;
+      $product->max_participants = $request->max_participants;
+      $product->description = $request->description;
+      $product->image = $request->image;
+
+      $product->update();
+
+      return redirect()->route('products.index')->with('message','Event updated');
+    }
 }

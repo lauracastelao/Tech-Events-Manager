@@ -1,5 +1,6 @@
 @include('Layouts.layout')
 
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -82,6 +83,7 @@ hover:translate-x-0.5"
            {{session('message')}}
         </div>
        @endif
+
     @foreach ($products as $product)
 
     <livewire:product-component :product="$product"/>

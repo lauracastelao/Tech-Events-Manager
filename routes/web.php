@@ -11,10 +11,10 @@ use App\Http\Controllers\SessionsController;
 Route::name('products')->group(function(){
     Route::get('/', [ProductController::class, 'index'])->name('.index');
     Route::get('/products/create',[ProductController::class, 'create'])->name('.create');
-    Route::post('/', [ProductController::class, 'store'])->name('.store');
-    
-    
+    Route::post('/', [ProductController::class, 'store'])->name('.store');    
     Route::delete('/{id}', [ProductController::class, 'delete'])->name('.delete');
+    Route::get('/{id}/edit', [ProductController::class, 'edit'])->name('.edit');
+    Route::put('/{id}', [ProductController::class, 'update'])->name('.update');
 
 });
 
