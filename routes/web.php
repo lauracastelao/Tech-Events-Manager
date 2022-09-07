@@ -14,7 +14,7 @@ Route::name('products')->group(function(){
     Route::post('/', [ProductController::class, 'store'])->name('.store');
     
     
-    Route::get('/products/{id}',[ProductController::class, 'show'])->name('.show');
+    Route::delete('/{id}', [ProductController::class, 'delete'])->name('.delete');
 
 });
 

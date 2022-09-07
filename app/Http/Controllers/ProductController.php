@@ -8,12 +8,7 @@ use Illuminate\Routing\Controller;
 
 class ProductController extends Controller
 {
-   // private Product $product;
-   // public function __construct(Product $product)
-   // {
-   //    $this->product = $product;
-      
-   // }
+   
    public function index(){
      
       $products= Product::orderBy('id','desc')->paginate(10);
@@ -51,6 +46,18 @@ class ProductController extends Controller
      ->withInput(['title'=>$request->title,'date'=>$request->date,'time'=>$request->time, 
      'max_participants'=>$request->max_participants,  'description'=>$request->description, 'image'=>$request->image  ]);
       } 
+    }
+
+    public function delete($id)
+    {
+      //try{
+        Product::destroy($id);
+         return redirect()->route('products.index')->with('message','Event deleted');
+     // }
+     // catch(\Throwable $th){
+        // return redirect()->route('products.index')->with('message','Error:Event not deleted');
+     // }
+
     }
    
 }

@@ -11,7 +11,7 @@
       
     <form action="{{route('products.store')}}" method="POST" class="mb-4" class="w-full max-w-xl bg-white rounded-lg shadow-md p-6">
        @csrf
-       {{-- @method('POST') --}}
+       @method('POST') 
         <div class="flex  items-center justify-center my-2 mx-4 md:mx-0 flex-wrap -mx-3 mb-6">
            <div class="w-full md:w-full px-3 mb-6">
               <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for='title'>Event Title</label>
