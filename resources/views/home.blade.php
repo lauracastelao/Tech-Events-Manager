@@ -32,9 +32,10 @@
                             <a href="{{ route('register') }}" class="ml-6 text-sl text-white-900 font-bold">Registro</a>
                         @endif
                     @endauth
+                    <button class="ml-6 text-sl text-white-900 font-bold"><a href="{{ route('products.create') }}">Crear Evento</a></button>
+
                 </div>
             @endif
-            <button class="btn"><a href="{{ route('products.create') }}">Crear Evento</a></button>
     </nav>
     <!-- component -->
     <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
@@ -84,12 +85,13 @@ hover:translate-x-0.5"
     
        @endif
 
+   <div class="cards_container flex">
     @foreach ($products as $product)
 
     <livewire:product-component :product="$product"/>
         
     @endforeach
-
+   </div>
     
     </div>
 

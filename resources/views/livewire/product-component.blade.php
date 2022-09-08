@@ -1,13 +1,13 @@
 <div class=container>
     <div class=card>
-        <div class=image>
-            <img src="/images/{{ $product->image }}" width="100px">
+        <div class="image" >
+            <img src="/images/{{ $product->image }}" width="200px">
         </div>
         <div class=content>
 
-            <a href="{{ $product->id }}">
+            <a href="products/{{ $product->id }}">
                 <h3>{{ $product->title }}</h3>
-            </a>
+            </a> 
             <p class="product_date">{{ $product->date }}/
             <strong>{{ $product->time }}</strong></p>
             <p>Max Participants:{{ $product->max_participants }}</p>
@@ -29,7 +29,8 @@
         </div>
         </div>
     </div>
-</div>
+</div
+
 
 
 
