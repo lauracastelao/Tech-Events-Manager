@@ -1,99 +1,24 @@
-/* * {
-    margin : 0;
-    padding: 0;
-    box-sizing : border-box;
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap%22");
 
-  }
-
-
-
-  .container .card {
-
-    width : 500px;
-    height : 315px;
-    background-color : rgb(255, 255, 255);
-    margin : 30px 10px;
-    padding : 20px 15px;
-
-    display : flex;
-    flex-direction : column;
-    box-shadow : 0 5px 20px rgba(0,0,0,0.5);
-    transition : 0.3s ease-in-out;
-    border-radius : 15px;
-  }
-  .container .card:hover {
-    height : 310px;
-  }
-
-
-  .container .card .image {
-    position : relative;
-    width : 260px;
-    height : 260px;
-
-    top : -40%;
-
-    box-shadow : 0 5px 20px rgba(0,0,0,0.2);
-    z-index : 2;
-  }
-
-  .container .card .image img {
-    max-width : 100%;
-    border-radius : 15px;
-  }
-
-  .container .card .content {
-    position : relative;
-    top : -140px;
-    padding : 10px 15px;
-    color : #111;
-    text-align : center;
-
-    visibility : hidden;
-    opacity : 0;
-    transition : 0.3s ease-in-out;
-
-  }
-
-  .container .card:hover .content {
-     margin-top : 30px;
-     visibility : visible;
-     opacity : 1;
-     transition-delay: 0.2s;
-
-  }
- .btn{
-    background-color: rgb(142, 230, 230);
-    padding: 8px;
-    border-radius: 10px;
- }
-  */
-  @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
-
-  *,
-  *::before,
-  *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-  }
+}
 
-  body {
-    font-family: "Quicksand", sans-serif;
-    display: grid;
-    place-items: center;
-    height: 100vh;
-    background: #7f7fd5;
-    background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
-  }
 
-  .container {
+ 
+.container {
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1200px;
     margin-block: 2rem;
     gap: 2rem;
+
   }
 
   img {
@@ -179,3 +104,8 @@
 div.cuqui{
   width: 20vh;
 }
+
+   
+    
+
+
