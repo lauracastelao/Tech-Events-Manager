@@ -13,8 +13,6 @@ body{
     margin: 0;
 }
 
-
-
 .container {
 
     display: flex;
@@ -23,14 +21,11 @@ body{
     max-width: 1200px;
     margin-block: 2rem;
     gap: 2rem;
-    font-family: "Quicksand", sans-serif;
-   
+    font-family: "Quicksand", sans-serif; 
     text-align: center;
-    
 }
 
 img {
-
     display: block;
     -o-object-fit: cover;
        object-fit: cover;
@@ -45,7 +40,6 @@ img {
     box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
     border-radius: 1em;
     background: #ffffff;
-
 }
 
 .cardbody {
@@ -869,6 +863,9 @@ select {
 }
 .-m-4 {
   margin: -1rem;
+}
+.m-5 {
+  margin: 1.25rem;
 }
 .mx-auto {
   margin-left: auto;

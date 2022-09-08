@@ -8,8 +8,6 @@
     margin: 0;
 }
 
-
-
 .container {
 
     display: flex;
@@ -18,14 +16,11 @@
     max-width: 1200px;
     margin-block: 2rem;
     gap: 2rem;
-    font-family: "Quicksand", sans-serif;
-   
+    font-family: "Quicksand", sans-serif; 
     text-align: center;
-    
 }
 
 img {
-
     display: block;
     object-fit: cover;
 }
@@ -39,7 +34,6 @@ img {
     box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
     border-radius: 1em;
     background: #ffffff;
-
 }
 
 .cardbody {

@@ -22,17 +22,16 @@
           {{session('message')}}
         </div>    
      @endif
+<div class="m-5">
 
    <div class="cards_container flex">
     @foreach ($products as $product)
     <livewire:product-component :product="$product"/>        
     @endforeach
-   </div>    
- </div>
-
-</section>
-
-
-
+</div>    
+<div class="mt-4">
+    {{ $products->links() }}
+</div>
+</div>
 </body>
 
