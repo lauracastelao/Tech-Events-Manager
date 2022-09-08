@@ -16,6 +16,9 @@
           <div class="user__info">
             <h5>Max participants:{{ $product->max_participants }}</h5>
             <small>{{ $product->date }}</small>
+            <a href="/send-email">
+              <button>Apuntarse</button>
+            </a> 
           </div>
         </div>
       </div>

@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 use App\Mail\TestMail;
-
+use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+
+use function Ramsey\Uuid\v1;
 
 class MailController extends Controller
 {
@@ -16,7 +18,6 @@ class MailController extends Controller
 
         ];
      Mail::to("lauragarciacastelao@hotmail.com")-> send(new TestMail($details));
-     return "Email Sent";
-    
+     return view('emails.send-email');
     }
 }

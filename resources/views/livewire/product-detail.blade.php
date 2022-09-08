@@ -5,7 +5,9 @@
         <img src="{{ $product->image }}" alt="card__image" class="card__image" width="600">
       </div>
       <div class="card__body">
-        <span class="tag tag-red">Apuntarme</span>
+        <a href="/send-email">
+          <button>Apuntarse</button>
+        </a> 
         <a href="products/{{ $product->id }}">
             <h4>{{ $product->title }}</h4>
         </a>
