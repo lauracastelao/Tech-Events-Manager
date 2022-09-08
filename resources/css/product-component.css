@@ -1,77 +1,79 @@
-* { 
-    margin : 0;
-    padding: 0;
-    box-sizing : border-box;
-   
-  }
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap%22");
 
-  
-  .container {
-   
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.container {
+
     display: flex;
     flex-wrap: wrap;
-    position : relative;
-    padding : 20px;  
-    margin-top: 50px;
-  }
-  
-  .container .card {
+    justify-content: center;
+    max-width: 1200px;
+    margin-block: 2rem;
+    gap: 2rem;
+    font-family: "Quicksand", sans-serif;
    
-    width : 400px;
-    height : 215px;  
-    background-color : rgb(255, 255, 255);
-    margin : 30px 10px;
-    padding : 20px 15px;
+    text-align: center;
     
-    display : flex;
-    flex-direction : column;
-    box-shadow : 0 5px 20px rgba(0, 0, 0, 0.5);
-    transition : 0.3s ease-in-out;
-    border-radius : 15px;
-  }
-  .container .card:hover {
-    height : 0px;    
-  }
-  
-  
-  /* .container .card .image {
-    position : relative;
-    width : 260px;
-    height : 260px;
-    
-    top : -40%;
-    left: 8px;
-    box-shadow : 0 5px 20px rgba(0,0,0,0.2);
-    z-index : 1;
-  }
-  
-  .container .card .image img {
-    max-width : 100%;
-    border-radius : 15px;
-  } */
-  
-  .container .card .content {
-    position : relative;
-    top : -140px;
-    padding : 10px 15px;
-    color : #111;
-    text-align : center;
-    
-    visibility : hidden;
-    opacity : 0;
-    transition : 0.3s ease-in-out;
-      
-  }
-  
-  .container .card:hover .content {
-     margin-top : 30px;
-     visibility : visible;
-     opacity : 1;
-     transition-delay: 0.2s;
-    
-  }
- .btn{
-    background-color: rgb(142, 230, 230);
-    padding: 8px;
-    border-radius: 10px;
- }
+}
+
+img {
+
+    display: block;
+    object-fit: cover;
+}
+
+.card {
+    display: flex;
+    width: 20vw;
+    height: auto;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1em;
+    background: #ffffff;
+
+}
+
+.cardbody {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.tag {
+    align-self: flex-start;
+    padding: 0.25em 0.75em;
+    border-radius: 1em;
+    font-size: 0.75rem;
+}
+
+.tag + .tag {
+    margin-left: 0.5em;
+}
+
+.tag-blue {
+    background: #56ccf2;
+    background: linear-gradient(to bottom, #2f80ed, #56ccf2);
+    color: #fafafa;
+}
+.cardbody h4{
+    font-size: 80%;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+p{
+    font-size: 70%;
+}
+.card__footer {
+    display: flex;
+    padding: 1rem;
+    margin-top: auto;
+}
