@@ -9,9 +9,10 @@
 }
 
 
- 
-.container {
 
+.container {
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -35,7 +36,7 @@
     box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
     border-radius: 1em;
     background: #ECE9E6;
-  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6);
 
   }
 
@@ -105,7 +106,7 @@ div.cuqui{
   width: 20vh;
 }
 
-   
-    
+
+
 
 

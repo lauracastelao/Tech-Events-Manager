@@ -1,6 +1,7 @@
-.container{
-    padding: 5px;
+body{
+    display: flex;
+    flex-direction: column;
 }
-.cuqui{
-    width: 20px;
+.container{
+    width: 80px;
 }
