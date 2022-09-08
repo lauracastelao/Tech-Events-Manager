@@ -1,5 +1,5 @@
 <div>
-   <div class="text-center mt-24 bg-gradient-to-r">
+   <div class="text-center mt-24">
       <div class="cuqui flex items-center justify-center mb-8">
          <img src="https://seeklogo.com/images/B/baby-yoda-logo-624AE4E7B3-seeklogo.com.png" alt="cardimage" class="cardimage" width="200">
        </div>

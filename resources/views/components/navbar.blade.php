@@ -5,7 +5,7 @@
 
 
             @if (Route::has('login'))
-                <div class="hidden fixed top-2 right-0 px-6 py-4 sm:block">
+                <div class="hidden fixed top-2 right-0 px-6 py-1 sm:block">
                     @auth
                         <a href="{{ url('/dashboard') }}" class="text-m text-gray-700 dark:text-gray-500">Home</a>
                     @else

@@ -1,6 +1,5 @@
 @include('Layouts.layout')
 
-
  @section('content')
  <div class=>
 
