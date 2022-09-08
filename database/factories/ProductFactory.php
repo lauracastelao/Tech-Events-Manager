@@ -1,9 +1,9 @@
 <?php
-
 namespace Database\Factories;
 
 use App\Models\Product;
 use Illuminate\Database\Eloquent\Factories\Factory;
+
 
 class ProductFactory extends Factory
 {
@@ -14,29 +14,16 @@ class ProductFactory extends Factory
      * @return array
      */
 
-    // public function definition(){
-    //     return [
-    //         'title',
-    //         'date',
-    //         'time',
-    //         'max_participants',
-    //         'description',
-    //         'image',
-    //     ];
-
-    // }
     public function definition()
     {
-        return [
-            'title' => $this->faker->sentence(),
+        return[
+            'title'=>$this->faker->name(),
             'date' => $this->faker->date('Y-m-d','now'),
             'time' => $this->faker->time(),
             'max_participants' => $this->faker->numberBetween(1,100),
             'description' => $this->faker->sentence(),
-            'image'=>$this->faker->imageUrl(640,480),
+            'image'=>$this->faker->imageUrl(640,480)
         ];
     }
-
-
-
+    
 }

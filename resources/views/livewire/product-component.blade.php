@@ -1,27 +1,33 @@
-
-<div class="container">
-    <div class="card">
-      <div class="card__header">
-        <img src="{{ $product->image }}" alt="card__image" class="card__image" width="600">
-      </div>
-      <div class="card__body">
-        <a href="products/{{ $product->id }}">
-            <h4>{{ $product->title }}</h4>
-        </a>
-        <p>{{ $product->description }}</p>
-      </div>
-      <div class="card__footer">
-        <div class="user">
-
-          <div class="user__info">
-            <h5>Max participants:{{ $product->max_participants }}</h5>
-            <small>{{ $product->date }}</small>
-            <a href="/send-email">
-              <button>Apuntarse</button>
-            </a> 
-          </div>
+<div class=container>
+    <div class=card>
+        <div class=image>
+            <img src="/images/{{ $product->image }}" width="100px">
         </div>
-      </div>
+        <div class=content>
+
+            <a href="{{ $product->id }}">
+                <h3>{{ $product->title }}</h3>
+            </a>
+            <p class="product_date">{{ $product->date }}/
+            <strong>{{ $product->time }}</strong></p>
+            <p>Max Participants:{{ $product->max_participants }}</p>
+            <p class="product_description">{{ $product->description }}</p>
+            <button class="btn"><a href="#">Apuntarme</a></button>
+            
+         <div class="flex justify-center">
+            
+            <form action="{{ route('products.delete', $product->id) }}" method="post">
+                @csrf
+                @method('DELETE')
+                <button class="btn mt-3">Eliminar</button>
+             </form>  
+            <form action="{{ route('products.edit', $product->id) }}" method="post">
+                @csrf
+                @method('GET')
+                <button class="btn mt-3">Editar</button>
+            </form>   
+        </div>
+        </div>
     </div>
 </div>
     {{-- <div class="card">

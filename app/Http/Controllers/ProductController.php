@@ -1,17 +1,23 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Http\Request;
 use App\Models\Product;
-use GuzzleHttp\Psr7\Request;
+//use GuzzleHttp\Psr7\Request;
 use Illuminate\Routing\Controller;
 
 class ProductController extends Controller
 {
-   public function index(){
+   private Product $product;
 
+   public function __construct(Product $product)
+   {
+      $this->product = $product;
+   }
+   
+   public function index(){     
+      
       $products = Product::orderBy('id','desc')->paginate(10);
-
       return view('home',["products"=>$products]);
    }
 
@@ -23,31 +29,76 @@ class ProductController extends Controller
       return view('detail',['product'=>$product]);
    }
 
-   public function create(){
+   public function create()
+   {
       return view('create');
    }
 
    public function store(Request $request)
    {
+      try{
+       $product= Product::create([
+       'title'=>$request->title,
+       'date'=>$request->date,
+       'time'=>$request->time,       
+       'max_participants'=>$request->max_participants,
+       'description'=>$request->description,
+       'image'=>$request->image
+       ]);  
 
-    $request->validate([
+       if ($image = $request->file('image')) {
+         $destinationPath = 'image/';
+         $profileImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
+         $image->move($destinationPath, $profileImage);
+         $input['image'] = "$profileImage";
+     }
+      
+       $product->save();
+       return redirect()->route('products.index')->with('message','Event added');
+      } catch(\Throwable $th){
+     return redirect()->route('products.create')->with('message','Event not added')
+     ->withInput(['title'=>$request->title,'date'=>$request->date,'time'=>$request->time, 
+     'max_participants'=>$request->max_participants,  'description'=>$request->description, 'image'=>$request->image  ]);
+      } 
+    }
 
-        'title'=> 'required',
+    public function delete($id)
+    {
+      //try{
+        Product::destroy($id);
+         return redirect()->route('products.index')->with('message','Event deleted');
+     // }
+     // catch(\Throwable $th){
+        // return redirect()->route('products.index')->with('message','Error:Event not deleted');
+     // }
 
-    ]);
+    }
+   
+    public function edit($id)
+    {
+      $product = $this->product->find($id);
+      return view('edit', ['product'=>$product]);
 
-    $product = new Product();
-    $product->title = $request->get('title');
-    $product->date = $request->get('date');
-    $product->time = $request->get('time');
-    $product->max_participants = $request->get('max_participants');
-    $product->description = $request->get('description');
-    $product->image = $request->get('image');
+    }
+    public function update($id, Request $request)
+    {
+      $product = $this->product->find($id);
+      $product->title = $request->title;
+      $product->date = $request->date;
+      $product->time = $request->time;
+      $product->max_participants = $request->max_participants;
+      $product->description = $request->description;
+      $product->image = $request->image;
 
-    $product ->save();
+      if ($image = $request->file('image')) {
+         $destinationPath = 'images/';
+         $profileImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
+         $image->move($destinationPath, $profileImage);
+         $input['image'] = "$profileImage";
+     } 
 
-    return redirect('/');
-   }
+      $product->update();
 
-
+      return redirect()->route('products.index')->with('message','Event updated');
+    }
 }

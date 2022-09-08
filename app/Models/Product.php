@@ -8,9 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
     use HasFactory;
+    
     protected $fillable = 
     ['title',
     'date',
-    'max participants',
-    'description'];
+    'time',
+    'max_participants',
+    'description',
+    'image'];
 }
