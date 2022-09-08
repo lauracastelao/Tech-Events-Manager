@@ -12,23 +12,23 @@
 </head>
 <div class="container-general">
 
-<body class="bg-gradient-to-r from-indigo-300 via-purple-500 to-pink-300">
+<body class="bg-gradient-to-r from-indigo-400 via-purple-900 to-indigo-250">
    <x-navbar></x-navbar>
-    
+
     <!-- component -->
      <x-slider></x-slider>
 
-     @if(session('message')) 
+     @if(session('message'))
         <div class="alert">
           {{session('message')}}
-        </div>    
+        </div>
      @endif
 
    <div class="cards_container flex">
     @foreach ($products as $product)
-    <livewire:product-component :product="$product"/>        
+    <livewire:product-component :product="$product"/>
     @endforeach
-   </div>    
+   </div>
  </div>
 
 </section>

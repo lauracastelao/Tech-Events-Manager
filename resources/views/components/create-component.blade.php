@@ -1,6 +1,6 @@
 <div>
-   <div class="text-center mt-24 bg-gradient-to-r">
-      <div class="cuqui flex items-center justify-center mb-8">
+   <div class="text-center">
+      <div class="center ml-8">
          <img src="https://seeklogo.com/images/B/baby-yoda-logo-624AE4E7B3-seeklogo.com.png" alt="cardimage" class="cardimage" width="200">
        </div>
        <h2 class="text-4xl text-white mb-8 tracking-tight">
@@ -11,8 +11,8 @@
      <div class="flex justify-center my-2  mx-4 md:mx-0">
      <form action = "{{route('products.store')}}" method="post" enctype="multipart/form-data" class="w-full max-w-xl bg-white rounded-lg shadow-md p-6">
        @csrf
-       @method('POST') 
-                
+       @method('POST')
+
 
       <div class="flex flex-wrap -mx-3 mb-6">
           <div class="w-full md:w-full px-3 mb-6">
@@ -41,11 +41,11 @@
           </div>
       </div>
          <div class="flex items-center justify-evenly">
-          <button class="btn" >Enviar</button>
-          <button class="btn"><a href="{{ url('/') }}">Cancel</a></button>
+          <button class="inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-indigo-500 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150" >Enviar</button>
+          <button class="inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150"><a href="{{ url('/') }}">Cancel</a></button>
          </div>
-         
-         
+
+
     </form>
     </div>
    </div>

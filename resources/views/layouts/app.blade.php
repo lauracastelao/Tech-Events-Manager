@@ -12,7 +12,7 @@
 
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-        <link rel="stylesheet" 
+        <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.1/tailwind.min.css">
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
