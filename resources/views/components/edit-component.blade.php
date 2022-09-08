@@ -9,11 +9,11 @@
 
      </div>
      <div class="flex justify-center my-2  mx-4 md:mx-0">
-  
-      
+
+
     <form action="{{route('products.update',['id'=>$product->id])}}" enctype="multipart/form-data" method="post"  class="w-full max-w-xl bg-white rounded-lg shadow-md p-6" ">
        @csrf
-       @method('PUT') 
+       @method('PUT')
        <div class="flex flex-wrap -mx-3 mb-6">
          <div class="w-full md:w-full px-3 mb-6">
            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for='Password'>Título</label>
@@ -42,11 +42,11 @@
          </div>
      </div>
         <div class="flex items-center justify-evenly">
-         <button class="btn" >Modificar</button>
-         <button class="btn"><a href="{{ url('/') }}">Cancel</a></button>
+         <button class="inline-flex items-center  py-2 bg-indigo-400 border border-transparent rounded-md font-semibold px-4 text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150" >Modificar</button>
+         <button class="inline-flex items-center  py-2 bg-indigo-400 border border-transparent rounded-md font-semibold px-4 text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150"><a href="{{ url('/') }}">Cancelar</a></button>
         </div>
-        
-        
+
+
    </form>
    </div>
   </div>
