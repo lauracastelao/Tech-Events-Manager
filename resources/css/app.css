@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "detail.css";
+
 @import "product-component.css";
 @import "home.css";
+@import "detail.css";
+@import "email.css";
