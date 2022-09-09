@@ -5,7 +5,7 @@ La idea creativa se basa en la creación una web que recoja diferentes eventos r
 
 En dichos eventos, presentados en Cards con la información (Día,hora,descripción) el usuario podrá apuntarse, registrarse y acceder a la plataforma.
 
-## Prototype ✏️
+## Prototipo ✏️
 
 
 
@@ -13,7 +13,7 @@ En dichos eventos, presentados en Cards con la información (Día,hora,descripci
 
 
 
-Requirements 🔩
+Requisitos 🔩
 ------------
 
 #### Latest Composer
