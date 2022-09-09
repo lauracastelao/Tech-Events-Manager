@@ -24,7 +24,7 @@ class ProductController extends Controller
    public function show( $id )
    {
      
-      $product = Product::find($id);
+      $product = $this->product->find($id);
 
       return view('detail',['product'=>$product]);
    }
@@ -37,7 +37,7 @@ class ProductController extends Controller
    public function store(Request $request)
    {
       try{
-       $product= Product::create([
+       $product= $this->product->create([
        'title'=>$request->title,
        'date'=>$request->date,
        'time'=>$request->time,       
