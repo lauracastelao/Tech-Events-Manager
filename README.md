@@ -48,13 +48,13 @@ En dichos eventos, presentados en Cards con la información (Día,hora,descripci
 
 ## Links de recursos 🔗 
 
-[Taildwind](https://tailwindcss.com/) <a margin="10" href="https://tailwindcss.com" target="_blank"><img align="center" margin="10px" height="30" src="https://github.com/abdoachhoubi/abdoachhoubi/blob/main/svgs/tailwind.svg" alt="tailwind"></a>
+[Taildwind](https://tailwindcss.com/) <p align="center"> <a margin="10" href="https://tailwindcss.com" target="_blank"><img align="center" margin="10px" height="30" src="https://github.com/abdoachhoubi/abdoachhoubi/blob/main/svgs/tailwind.svg" alt="tailwind"></a>
 
 [Laravel v.8] (https://laravel.com/docs/8.x/installation)  <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="200" alt="Laravel Logo"></a></p>
 
 
 
-<img src="https://img.icons8.com/officel/48/000000/php-logo.png"/> 
+
 
 
 
