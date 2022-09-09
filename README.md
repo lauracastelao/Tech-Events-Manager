@@ -1,8 +1,9 @@
 
 # Friki Calendar 🪄
 
-La idea creativa se basa en la creación una web que recoja diferentes eventos relacionados con cómic,convenciones de coleccionismo, cometcon etc.
+La idea creativa se basa en la creación una web que recoja diferentes eventos relacionados con eventos decómic,convenciones de coleccionismo, cometcon etc.
 
+En dichos eventos, presentados en Cards con la información (Día,hora,descripción) el usuario podrá apuntarse, registrarse y acceder a la plataforma.
 
 ## Prototype ✏️
 
