@@ -3,5 +3,7 @@ h1{
 }
 
 .cuqui{
+    display: flex;
+    justify-content: center;
     width: 20px;
 }
