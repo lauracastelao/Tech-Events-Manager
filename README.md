@@ -70,8 +70,10 @@ should be automatically selected.
 
 
 
+## Herramientas creativas 🎨
 
 
+<a margin="10" href="https://figma.com" target="_blank"><img margin="10px" height="40" src="https://github.com/abdoachhoubi/abdoachhoubi/blob/main/svgs/figma.svg" alt="figma"></a>
 
 
 
