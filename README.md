@@ -52,6 +52,8 @@ En dichos eventos, presentados en Cards con la información (Día,hora,descripci
 <p align= "center"> [Taildwind](https://tailwindcss.com/) 
 
 <p align="center"> <a margin="10" href="https://tailwindcss.com" target="_blank"><img align="center" margin="10px" height="30" src="https://github.com/abdoachhoubi/abdoachhoubi/blob/main/svgs/tailwind.svg" alt="tailwind"></a>
+    
+<p align= "center">
 
 [Laravel v.8] (https://laravel.com/docs/8.x/installation)  
 
