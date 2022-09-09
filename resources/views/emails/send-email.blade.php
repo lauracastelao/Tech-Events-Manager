@@ -16,7 +16,7 @@
 
     <nav class="flex py-3  text-white w-screen">
         <div class="px-12  flex">
-            
+
 
 
             @if (Route::has('login'))
@@ -30,18 +30,18 @@
                             <a href="{{ route('register') }}" class="ml-6 text-sl text-white-900 font-bold">Registro</a>
                         @endif
                     @endauth
-                    <button class="ml-6 text-sl text-white-900 font-bold "><a href="{{ url('/create')}}">Crear Evento</a></button>
+                    <button ><a href="{{ url('/create')}}">Crear Evento</a></button>
                 </div>
             @endif
 
         </div>
-        <div>
-            <div class="cuqui">
+        <div class="cuqui flex-center">
+            <div class="cuqui flex-center">
                 <img src="https://github.com/lauracastelao/image/blob/main/A%C3%B1adir%20un%20subt%C3%ADtulo%20(1).png?raw=true" alt="card__image" class="card__image" width="200">
               </div>
               <br>
-           <h1> Te has suscrito al evento correctamente </h1>
-    <button class="btn"><a href="{{ url('/') }}">Volver</a></button>
+           <h1 class="text-center text-white"> Te has suscrito al evento correctamente </h1>
+    <button class="inline-flex items-center  py-2 bg-indigo-400 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150"><a href="{{ url('/') }}">Volver</a></button>
         </div>
 </body>
 </html>

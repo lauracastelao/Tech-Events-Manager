@@ -14,10 +14,10 @@ class ProductController extends Controller
    {
       $this->product = $product;
    }
-   
-   public function index(){     
-      
-      $products = Product::orderBy('id','desc')->paginate(4);
+
+   public function index(){
+
+      $products = Product::orderBy('id','desc')->paginate(1);
       return view('home',["products"=>$products]);
    }
 
@@ -40,26 +40,26 @@ class ProductController extends Controller
        $product= Product::create([
        'title'=>$request->title,
        'date'=>$request->date,
-       'time'=>$request->time,       
+       'time'=>$request->time,
        'max_participants'=>$request->max_participants,
        'description'=>$request->description,
        'image'=>$request->image
-       ]);  
+       ]);
 
        if ($image = $request->file('image')) {
          $destinationPath = 'images/';
          $profileImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
          $image->move($destinationPath, $profileImage);
          $product['image'] = "$profileImage";
-     }      
+     }
        $product->save();
 
        return redirect()->route('products.index')->with('message','Event added');
       } catch(\Throwable $th){
      return redirect()->route('products.create')->with('message','Event not added')
-     ->withInput(['title'=>$request->title,'date'=>$request->date,'time'=>$request->time, 
+     ->withInput(['title'=>$request->title,'date'=>$request->date,'time'=>$request->time,
      'max_participants'=>$request->max_participants,  'description'=>$request->description, 'image'=>$request->image  ]);
-      } 
+      }
     }
 
     public function delete($id)
@@ -73,7 +73,7 @@ class ProductController extends Controller
      // }
 
     }
-   
+
     public function edit($id)
     {
       $product = $this->product->find($id);
@@ -95,7 +95,7 @@ class ProductController extends Controller
          $profileImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
          $image->move($destinationPath, $profileImage);
          $product['image'] = "$profileImage";
-     } 
+     }
 
       $product->update();
 

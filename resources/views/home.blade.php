@@ -6,34 +6,32 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Tailwind CSS Link -->
+
 
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <div class="container-general">
 
-<body class="bg-gradient-to-r from-indigo-400 via-purple-900 to-indigo-250">
-   <x-navbar></x-navbar>
+    <body class="bg-gradient-to-r from-indigo-400 via-purple-900 to-indigo-250">
 
-    <!-- component -->
-     <x-slider></x-slider>
+        <x-navbar></x-navbar>
+        <x-slider></x-slider>
 
-     @if(session('message'))
+        @if(session('message'))
         <div class="alert">
-          {{session('message')}}
+            {{session('message')}}
         </div>
-     @endif
+        @endif
+        <div class="m-5">
 
-   <div class="cards_container flex">
-    @foreach ($products as $product)
-    <livewire:product-component :product="$product"/>
-    @endforeach
-   </div>
- </div>
-
-</section>
-
-
+            <div class="cards_container flex">
+             @foreach ($products as $product)
+             <livewire:product-component :product="$product"/>
+             @endforeach
+         </div>
+         <div class="mt-4">
+             {{ $products->links() }}
+         </div>
+</div>
 
 </body>
-
