@@ -20,8 +20,8 @@ Requirements 🔩
 
 PHP 
 
-NPM
-<img src="https://img.icons8.com/color/48/000000/npm.png"/>  <img height=60px 
+
+<img src="https://img.icons8.com/color/48/000000/npm.png"/>  <img height=60px>
 
 #### Composer 2.2 LTS (Long Term Support)
 
