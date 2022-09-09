@@ -1,7 +1,7 @@
 <div>
    <div class="text-center mt-24">
       <div class="cuqui flex items-center justify-center mb-8">
-         <img src="https://seeklogo.com/images/B/baby-yoda-logo-624AE4E7B3-seeklogo.com.png" alt="cardimage" class="cardimage" width="200">
+
        </div>
        <h2 class="text-4xl text-white mb-8 tracking-tight">
           Editar Evento
@@ -33,7 +33,7 @@
          </div>
          <div class="w-full md:w-full px-3 mb-6">
           <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for='Password'>Descripción</label>
-          <input class="appearance-none block w-full bg-white text-gray-900 font-medium border border-gray-400 rounded-lg py-3 px-3 leading-tight focus:outline-none" name="description" type='text' value="{{$product->description ?? old('description')}}>
+          <input class="appearance-none block w-full bg-white text-gray-900 font-medium border border-gray-400 rounded-lg py-3 px-3 leading-tight focus:outline-none" name="description" type='text' value="{{$product->description ?? old('description')}}">
          </div>
          <div class="w-full md:w-full px-3 mb-6">
           <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for='Password'> Imagen</label>

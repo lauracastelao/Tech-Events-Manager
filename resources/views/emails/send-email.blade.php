@@ -11,11 +11,11 @@
     <title>Document</title>
 
 </head>
-<div class="container-general">
-<div class="bg-gradient-to-r from-indigo-800 via-purple-500 to-pink-300  w-screen">
+<div class="container-general flex-center">
+<div class="bg-gradient-to-r from-indigo-800 via-purple-500 to-pink-300  w-screen flex-center">
 
     <nav class="flex py-3  text-white w-screen">
-        <div class="px-12  flex">
+        <div class="px-12  flex-center">
 
 
 
@@ -38,9 +38,9 @@
         <div class="cuqui flex-center">
             <div class="cuqui flex-center">
                 <img src="https://github.com/lauracastelao/image/blob/main/A%C3%B1adir%20un%20subt%C3%ADtulo%20(1).png?raw=true" alt="card__image" class="card__image" width="200">
-              </div>
+                <h1 class="text-white"> Te has suscrito al evento correctamente </h1>
+            </div>
               <br>
-           <h1 class="text-center text-white"> Te has suscrito al evento correctamente </h1>
     <button class="inline-flex items-center  py-2 bg-indigo-400 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150"><a href="{{ url('/') }}">Volver</a></button>
         </div>
 </body>

@@ -1,7 +1,8 @@
 <div>
    <div class="text-center">
-      <div class="center ml-8">
-         <img src="https://seeklogo.com/images/B/baby-yoda-logo-624AE4E7B3-seeklogo.com.png" alt="cardimage" class="cardimage" width="200">
+
+      <div class="cuqui flex items-center justify-center mb-8
+      ">
        </div>
        <h2 class="text-4xl text-white mb-8 tracking-tight">
           Añadir Evento
@@ -44,7 +45,6 @@
           <button class="inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-indigo-500 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150" >Enviar</button>
           <button class="inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150"><a href="{{ url('/') }}">Cancel</a></button>
          </div>
-
 
     </form>
     </div>
