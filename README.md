@@ -18,7 +18,7 @@ Requirements 🔩
 
 #### Latest Composer
 
-PHP 
+<img src="https://img.icons8.com/officel/48/000000/php-logo.png"/> 
 
 
 <img src="https://img.icons8.com/color/48/000000/npm.png"/>  <img height=60px>
