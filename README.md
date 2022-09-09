@@ -19,6 +19,7 @@ Requirements 🔩
 #### Latest Composer
 
 PHP 
+NPM
 
 #### Composer 2.2 LTS (Long Term Support)
 
