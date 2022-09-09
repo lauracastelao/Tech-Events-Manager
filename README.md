@@ -13,7 +13,18 @@ En dichos eventos, presentados en Cards con la información (Día,hora,descripci
 
 
 
+Requirements 🔩
+------------
 
+#### Latest Composer
+
+PHP 
+
+#### Composer 2.2 LTS (Long Term Support)
+
+PHP versions 5.3.2 - 8.1 are still supported via the LTS releases of Composer (2.2.x). If you
+run the installer or the `self-update` command the appropriate Composer version for your PHP
+should be automatically selected.
 
 
 
