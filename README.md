@@ -1,7 +1,7 @@
 
 # Friki Calendar 🪄
 
-Este proyecto se estructura principalmente en ser una web que recoja diferentes eventos relacionados con cómic,convenciones de coleccionismo, cometcon etc.
+La idea creativa se basa en la creación una web que recoja diferentes eventos relacionados con cómic,convenciones de coleccionismo, cometcon etc.
 
 
 ## Prototype ✏️
